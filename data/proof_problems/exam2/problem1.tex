@@ -1,0 +1,3 @@
+**Problem 1 (18 points)** Recall the RSA assumption: Let $p,q$ be two random primes and $N=pq$, let $e$ be a random value in $\Z_{\phi(N)}^*$. The RSA assumption says $f_{e, N}: \Z_N^* \to \Z_N^*$, $f_{e, N}(x) = x^e\bmod N $ is a one-way function.
+
+Now consider a new function $g_{e, N}: \Z_N^* \to \Z_N^* \times \Z_N^*$,  $g_{e, N}(x) = x^e\bmod N, x^{2e} \bmod N$ (meaning that $g_{e, N}$, on input $x$, outputs two numbers: $x^e\bmod N$ and $x^{2e} \bmod N$). Show that $g_{e, N}$ is a one-way function based on the RSA assumption. 

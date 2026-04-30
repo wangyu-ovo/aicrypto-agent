@@ -1,0 +1,6 @@
+category: RSA
+flag: UMASS{i_will_make_a_solve_script}
+from: UMassCTF2025
+name: xorsa
+time: 300
+type: static

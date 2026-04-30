@@ -1,0 +1,1 @@
+flag = "CCTF{Di0phaNtinE_eQuaT1on_iZ_4n_equ4tion_wiTh_int3ger_solu7Ions_0nly!}"

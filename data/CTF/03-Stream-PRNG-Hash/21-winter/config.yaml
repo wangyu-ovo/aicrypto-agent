@@ -1,0 +1,6 @@
+category: Stream-PRNG-Hash
+flag: dice{according_to_geeksforgeeks}
+from: dicectf-quals-2024
+name: winter
+time: 1800
+type: dynamic

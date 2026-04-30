@@ -1,0 +1,3 @@
+those wolvsec nerds really think they're "good at security" huh... running the ransomware was way too easy. i've uploaded their files to our secure storage, let me know when you have them
+-doubledelete@wolp.hv
+wctf{s0m3_g00d_s3cur1ty_y0u_h4v3_r0lling_y0ur_0wn_crypt0_huh}

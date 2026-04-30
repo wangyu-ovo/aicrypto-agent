@@ -36,12 +36,17 @@ class ClaudeModel(BaseModel):
     
     def get_response(self) -> str:
         if self.thinking:
-         
+            # Opus 4.7+ uses adaptive thinking; older models use enabled+budget_tokens
+            if "opus-4" in self.deployment:
+                thinking_param = {"type": "adaptive"}
+            else:
+                thinking_param = {"type": "enabled", "budget_tokens": 4000}
+
             with self.client.messages.stream(
                 model=self.deployment,
-                max_tokens=10000,
+                max_tokens=16000,
                 system=self.system_prompt,
-                thinking={"type": "enabled", "budget_tokens": 4000},
+                thinking=thinking_param,
                 messages=self.messages,
             ) as stream:
                 thinking_started = False

@@ -1,0 +1,10 @@
+\paragraph{Problem 3 (18 points)}
+
+
+Let $F:=\{ F^n: \{0,1\}^{3n} \to \{0,1\}^{2n}  \}_{n\in\mathbb{N}}$ be a family of one-way functions (OWFs). 
+Let $G:=\{ G^n: \{0,1\}^n \to \{0,1\}^{2n}  \}_{n\in\mathbb{N}}$ be a family of PRGs. 
+
+Let $H:=\{ H^n: \{0,1\}^{n} \to \{0,1\}^{2n} \}_{n\in\mathbb{N}}$ be defined by: for any $x\in\{0,1\}^n$ 
+\[ H^n(x) := F^{n}( x, G^n(x) ) .  \]
+
+Assuming one-way functions exist, show that there exists a family of OWFs $F$ and a family of PRGs $G$ such that $H$ is NOT a OWF family.

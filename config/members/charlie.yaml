@@ -1,0 +1,12 @@
+# config/members/charlie.yaml
+member: charlie
+model: gpt-4.1
+
+prompts:
+  original: src/prompts/CTF/system_prompt
+  prompt-charlie: config/custom_prompts/charlie_instructional.txt
+  prompt-juan: config/custom_prompts/juan_instructional.txt
+  prompt-justus: config/custom_prompts/justus_poisoned.txt
+  prompt-miguel-i: config/custom_prompts/miguel_instructional.txt
+  prompt-miguel-p: config/custom_prompts/miguel_poisoned.txt
+  prompt-ryan: config/custom_prompts/ryan_instructional.txt

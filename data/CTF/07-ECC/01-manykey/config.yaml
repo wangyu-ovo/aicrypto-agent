@@ -1,0 +1,6 @@
+category: ECC
+flag: irisctf{key_generating_machine}
+from: iris-2024
+name: ManyKey
+time: 300
+type: dynamic

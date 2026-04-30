@@ -1,0 +1,6 @@
+category: Stream-PRNG-Hash
+flag: SEKAI{CrCrCRcRCRcrcrcRCrCrC}
+from: sekaictf-2023
+name: noisy-crc
+time: 300
+type: dynamic

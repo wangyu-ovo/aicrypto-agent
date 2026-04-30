@@ -1,0 +1,6 @@
+category: DLP
+flag: SECCON{Yay! You've got a 333-bit useful prime for CTF! <333}
+from: seccon-2023
+name: DLP-4.0
+time: 300
+type: dynamic

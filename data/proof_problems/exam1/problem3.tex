@@ -1,0 +1,9 @@
+\paragraph{Problem 3 (18 points)}
+Let $F:=\{ F^n:=\{ f^n_k: \{0,1\}^n \to \{0,1\}^n  \}_{k\in K_n} \}_{n\in\mathbb{N}}$ be a family of PRFs. 
+Let $G:=\{ G^n: \{0,1\}^n \to \{0,1\}^{2n}  \}_{n\in\mathbb{N}}$ be a family of PRGs. 
+
+Let $H:=\{ H^n:=\{ h^n_k: \{0,1\}^n \to \{0,1\}^{2n}  \}_{k\in K_{2n}} \}_{n\in\mathbb{N}}$
+be defined by: for any $x\in\{0,1\}^n$ 
+\[ h^n_k(x) := f^{2n}_k(G^n(x))   \]
+
+Prove: there exists a family of PRFs $F$ and a family of PRGs $G$ such that $H$ is NOT a PRF family.

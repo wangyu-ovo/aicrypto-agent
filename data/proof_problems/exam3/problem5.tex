@@ -1,0 +1,23 @@
+\paragraph{Problem 5 (20 points)}
+A one-time signature is a weaker notion of a standard digital signature in the sense that the adversary is only allowed to make at most one signing queries in the Forgery Game. More specifically, the Forgery Game in the definition of a one-time signature is
+
+\begin{definition}
+The Forgery Game is between an adversary $Adv$ and a challenger $Chal$
+\begin{itemize}
+    \item $Chal$ computes $\mathsf{Gen}(1^n)=(sk,pk)$, and sends $pk$ to $Adv$.
+    \item $Adv$ sends $m_1$ to $Chal$, and obtains $\sigma_1=\mathsf{Sign}(sk, m_1)$ in response.
+    \item $Adv$ sends $(m^*, \sigma^*)$ to $Chal$.
+\end{itemize}
+$Adv$ wins if (1) $\mathsf{Verify}(pk, m^*,\sigma^*) = 1$, and (2) $m^*$ has not been queried before, i.e., $m^*\neq m_1$. 
+\end{definition}
+
+There is a simple construction of a one-time signature for the message space $\{0, 1\}^n$ from one-way functions. Given a OWF $f$, we construct a one-time signature as follows:
+\begin{itemize}
+    \item $\mathsf{Gen}(1^n)$ samples $2n$ random inputs $\{ x_i^b \}_{ i = 1, ..., n, b = 0,1}$ as the secret key, sets the $2n$ outputs of the OWF $\{ y_i^b = f(x_i^b) \}_{ i = 1, ..., n, b = 0,1}$ as the public key.
+    \item $\mathsf{Sign}(sk, m)$ takes $m =(b_1, ..., b_n) \in \{0, 1\}^n$, outputs $x_i^{b_i}$ for $i = 1, ..., n$ as the signature $\sigma$. 
+    \item $\mathsf{Verify}(pk, m,\sigma^*)$ outputs 1 if $f(x_i^{b_i}) = y_i^{b_i}$ for all $i = 1, ..., n$, outputs 0 otherwise. 
+\end{itemize}
+
+
+This question asks you to construct a one-time ``unambiguous'' signature scheme, where ``unambiguous'' means for the $(m^*, \sigma^*)$ sent by the $Adv$, we don't require ``$m^*$ has not been queried before'', but if Adv chooses $m^* = m_1$, then Adv must choose $\sigma^*\neq \sigma_1$ such that $\mathsf{Verify}(pk, m^*,\sigma^*) = 1$ to win. 
+You can use any assumptions you have learned in the class, except for random oracles. Please show correctness, and the proof of one-time unambiguous security based on the assumption you have made.

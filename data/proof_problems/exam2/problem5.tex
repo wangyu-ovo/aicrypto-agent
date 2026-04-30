@@ -1,0 +1,20 @@
+\paragraph{Problem 5 (20 points)} 
+For reference, we recall the definition of Chosen Plaintext Attack (CPA) security game for public key encryption (PKE).
+
+\begin{definition}[CPA security]
+We say a PKE scheme (Gen, Enc, Dec) is CPA-secure, if for all n.u.p.p.t. adversary $\mathsf{Adv}$, there exists a negligible function $\epsilon(\cdot)$ such that, $\forall n \in \mathbb{N}$,
+\begin{equation*}
+    \Pr[ ~\mathsf{Adv}\text{ wins PKE-CPA-Game} ~]\leq \frac{1}{2} + \epsilon(n),
+\end{equation*}
+where the PKE-CPA-Game is defined as
+\begin{enumerate}
+\item The challenger runs $\mathsf{Gen}(1^n)\rightarrow pk, sk$, sends $pk$ to the adversary. 
+\item The adversary gets $(1^n, pk)$, chooses two messages from the message space $m_0, m_1\in M$ and sends $m_0, m_1$ to the challenger. 
+\item The challenger picks a uniformly random $b\in\{0, 1\}$, and sends $\mathsf{Enc}_{pk}(m_b)$ to the adversary.
+\item The adversary outputs a bit $b'$, wins if $b' = b$.
+\end{enumerate}
+\end{definition}
+
+Suppose you are given two public-key encryption (PKE) schemes, $\mathsf{PKE}_A = (\mathsf{Gen}_A, \mathsf{Enc}_A, \mathsf{Dec}_A)$, $\mathsf{PKE}_B = (\mathsf{Gen}_B, \mathsf{Enc}_B, \mathsf{Dec}_B)$ with message space $M = \{ 0, 1 \}$ (you can encrypt long messages by encrypting bit-by-bit). Both schemes satisfy correctness, but you are only guaranteed that one of them is CPA secure, and you don't know which one is secure. 
+
+This question asks you to construct a CPA secure PKE scheme with message space $M = \{ 0, 1 \}$ by combining $\mathsf{PKE}_A$ and $\mathsf{PKE}_B$. Please provide the construction, show that it satisfies correctness, and CPA security. 

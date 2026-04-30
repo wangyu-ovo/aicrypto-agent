@@ -1,0 +1,12 @@
+\paragraph{Problem 6 (22 points)}
+
+Given a family of collision resistant hash functions (CRHFs) 
+\[ F:=\{ F^n:=\{ f^n_k: \{0,1\}^{2n} \to \{0,1\}^n  \}_{k\in \mathcal{K}_n} \}_{n\in\mathbb{N}}.\] 
+Construct a family of CRHFs 
+\[ G:=\{ G^n:=\{ g^n_j: \{0,1\}^{l(n)} \to \{0,1\}^{m(n)} \}_{j\in \mathcal{J}_n} \}_{n\in\mathbb{N}}\] that satisfies
+(1) Length halving, i.e., $l(n) = 2m(n)$; 
+(2) Each function has two hardcore bits $h_1$, $h_2$ (you need to give the constructions of $h_1$, $h_2$). That is, for all n.u.p.p.t. adversary $Adv$, there exists a negligible function $\epsilon$ such that for all $n\in \mathbb{N}$, 
+\[ Pr[ ~ Adv(1^n, j, g^n_j( x )) = (h_1(x), h_2(x)) ~ ] \leq 1/4+\epsilon(n), \]
+where the probability is taken over the adversary's randomness, the randomness in sampling $j$ from $\mathcal{J}_n$, and the randomness of sampling $x\leftarrow \{0,1\}^{l(n)}$. 
+
+In the proof, if you need to use a statement like ``a CRHF from $m$ bits to $n$ bits, for some length parameters $m,n$, is a OWF'', you need to prove it.

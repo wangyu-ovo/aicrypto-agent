@@ -1,0 +1,6 @@
+category: RSA
+flag: BITSCTF{s0_fun_7o_50lv3_5ef78a03}
+from: BITSCTF-2025
+name: rsa-bummer
+time: 300
+type: dynamic

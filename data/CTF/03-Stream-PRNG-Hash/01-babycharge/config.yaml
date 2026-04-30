@@ -1,0 +1,6 @@
+category: Stream-PRNG-Hash
+flag: irisctf{initialization_is_no_problem}
+from: iris-2024
+name: BabyCharge
+time: 300
+type: dynamic

@@ -1,0 +1,6 @@
+category: Stream-PRNG-Hash
+flag: lactf{g_d03s_n0t_s7and_f0r_g00d}
+from: lactf-2025
+name: good-hash
+time: 300
+type: dynamic

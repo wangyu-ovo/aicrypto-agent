@@ -1,5 +1,5 @@
 gpt-4.1:
-  client: "azure"
+  client: "openai"
   model_name: "gpt-4.1"
   deployment: "gpt-4.1"
 
@@ -25,7 +25,7 @@ o3:
 
   
 o3-mini:
-  client: "azure"
+  client: "openai"
   model_name: "o3-mini"
   deployment: "o3-mini"
   reasoning_effort: medium
@@ -51,6 +51,18 @@ o4-mini-high:
   deployment: "o4-mini-1020ktpm"
   reasoning_effort: high
 
+
+claude-opus-4-7:
+  client: "anthropic"
+  model_name: "claude-opus-4-7"
+  deployment: "claude-opus-4-7"
+  thinking: false
+
+claude-opus-4-7-thinking:
+  client: "anthropic"
+  model_name: "claude-opus-4-7-thinking"
+  deployment: "claude-opus-4-7"
+  thinking: true
 
 claude-3.7-sonnet:
   client: "anthropic_aws"
@@ -81,6 +93,11 @@ gemini-2.5-pro-preview:
   client: "google"
   model_name: "gemini-2.5-pro-preview"
   deployment: "gemini-2.5-pro-preview-06-05"
+
+gemini-3.1-pro-preview:
+  client: "google"
+  model_name: "gemini-3.1-pro-preview"
+  deployment: "gemini-3.1-pro-preview"
   
 
 deepseek-v3:
@@ -93,6 +110,18 @@ deepseek-r1:
   client: "tencent"
   model_name: 'deepseek-r1'
   deployment: "deepseek-r1-0528"
+  is_reasoning: true
+
+deepseek-chat:
+  client: "deepseek"
+  model_name: 'deepseek-chat'
+  deployment: "deepseek-chat"
+  is_reasoning: false
+
+deepseek-reasoner:
+  client: "deepseek"
+  model_name: 'deepseek-reasoner'
+  deployment: "deepseek-reasoner"
   is_reasoning: true
 
 

@@ -1,0 +1,6 @@
+category: Stream-PRNG-Hash
+flag: ictf{mixing_modulus_is_really_annoying_right?}
+from: imaginaryctf-2024
+name: lf3r
+time: 300
+type: static

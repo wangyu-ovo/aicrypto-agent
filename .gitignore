@@ -205,3 +205,10 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+# Dataset and outputs (too large for git)
+data/
+outputs/
+
+# Juan's personal docs folder (notes, scripts, experiment logs, poisoned prompt)
+juan_docs/

@@ -1,0 +1,6 @@
+category: RSA
+flag: NPUCTF{diff1cult_rsa_1s_e@sy}
+from: NPUCTF-2020
+name: ezrsa
+time: 300
+type: static

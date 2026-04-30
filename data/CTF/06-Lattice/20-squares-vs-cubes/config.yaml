@@ -1,0 +1,6 @@
+category: Lattice
+flag: SEKAI{this_challenge_was_originally_called_oblivion_but_there_was_an_ACSC_crypto_also_called_that}
+from: sekaictf-2024
+name: squares-vs-cubes
+time: 300
+type: static

@@ -1,0 +1,6 @@
+category: Block
+flag: SECCON{Congratulation!_you are_master_of_summonor!_you_can_summon_2_monsters_in_one_turn}
+from: SECCON-Quals-2024
+name: dual-summon
+time: 300
+type: dynamic

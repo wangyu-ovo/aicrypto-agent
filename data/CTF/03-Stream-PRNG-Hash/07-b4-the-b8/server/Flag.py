@@ -1,0 +1,1 @@
+FLAG = b"UMASS{1nf0_r3c0nc1li@4i0n_5#0u1d_b3_r@nd0m_n04_ju5t_@_tH3_star4}"

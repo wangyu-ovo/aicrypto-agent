@@ -1,0 +1,6 @@
+category: Lattice
+flag: hitcon{it_is_still_leaking_some_traces_in_some_way}
+from: hitcon 2024
+name: MatProd
+time: 2800
+type: static

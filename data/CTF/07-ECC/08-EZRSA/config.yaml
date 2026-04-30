@@ -1,0 +1,6 @@
+category: ECC
+flag: hitcon{the_single_catastrophic_else_branch_:(}
+from: hitcon 2023
+name: EZRSA
+time: 1800
+type: dynamic

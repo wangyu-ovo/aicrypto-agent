@@ -1,0 +1,6 @@
+category: Stream-PRNG-Hash
+flag: uoftctf{they're_c0rrelated_..._Rng1_D0esnt_4ffect_rng2}
+from: UOFTCTF-2025
+name: Causation
+time: 300
+type: dynamic

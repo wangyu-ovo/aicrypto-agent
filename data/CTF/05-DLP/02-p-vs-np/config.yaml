@@ -1,0 +1,6 @@
+category: DLP
+flag: lactf{m4by3_p_1s_3qual_t0_np}
+from: lactf-2025
+name: p-vs-np
+time: 300
+type: dynamic

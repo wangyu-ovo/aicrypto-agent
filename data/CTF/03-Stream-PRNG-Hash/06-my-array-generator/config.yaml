@@ -1,0 +1,6 @@
+category: Stream-PRNG-Hash
+flag: DUCTF{n0_d1ffus10n_m4k3s_m3_sad}
+from: DUCTF-2024
+name: my-array-generator
+time: 300
+type: static

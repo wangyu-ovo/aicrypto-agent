@@ -1,0 +1,6 @@
+category: Block
+flag: DUCTF{should_have_used_authenticated_encryption!}
+from: DUCTF-2024
+name: decrypt-then-eval
+time: 300
+type: dynamic

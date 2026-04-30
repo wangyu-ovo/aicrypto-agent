@@ -1,0 +1,10 @@
+\paragraph{Problem 4 (18 points)}
+Suppose we use the function family $H$ in Problem 3 to construct a secret-key encryption scheme SKE, as follows: for all $n\in\mathbb{N}$
+\begin{enumerate}[itemsep=0pt]
+\item Let the message space be $\{0,1\}^{2n}$, let the key space be $K_{2n}$. 
+\item $\mathsf{Gen}(1^n)$ samples a random key $k$ from $K_{2n}$. 
+\item $\mathsf{Enc}(k, m)$ samples a random string $r\in\{0,1\}^{n}$, outputs $ct = (r, h^n_k(r)\oplus m)$.
+\item $\mathsf{Dec}(k, ct)$ parses $ct = (c_1, c_2)$, outputs $m = h^n_k(c_1)\oplus c_2$.
+\end{enumerate}
+
+Prove: SKE is a secure secret-key encryption scheme against chosen plaintext attacks. (Hint: think of why your attack in Problem 3 cannot work here.)

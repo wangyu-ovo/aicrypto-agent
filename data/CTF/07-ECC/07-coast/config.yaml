@@ -1,0 +1,6 @@
+category: ECC
+flag: ictf{just_a_very_broken_implementation_of_csidh}
+from: imaginaryctf-2024
+name: coast
+time: 300
+type: static

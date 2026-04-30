@@ -1,0 +1,6 @@
+category: Stream-PRNG-Hash
+flag: AIS3{if_you_know_the_flag......?_you_know_the_flag!}
+from: ais3 eof 2025
+name: zkdlp
+time: 3000
+type: dynamic

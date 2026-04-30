@@ -1,0 +1,6 @@
+category: Homemade
+flag: SECCON{Is this a secure cryptosystem if quaternions are not used?}
+from: seccon-2023
+name: KEX-4.0
+time: 300
+type: static

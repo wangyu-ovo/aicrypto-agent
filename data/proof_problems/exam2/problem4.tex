@@ -1,0 +1,11 @@
+\paragraph{Problem 4 (18 points)}
+Let 
+$$F:=\{ F^n:= \{ f^n_j: \{0,1\}^n \to \{0,1\} \}_{j\in \mathcal{J}^n} \}_{n\in\mathbb{N}}$$ 
+$$G:=\{ G^n:= \{ g^n_k: \{0,1\}^n \to \{0,1\} \}_{k\in \mathcal{K}^n} \}_{n\in\mathbb{N}}$$ 
+be two function families.
+We are guaranteed that one of them is a pseudorandom function (PRF) family, but we don't know which one actually is a PRF family. 
+
+So we combine them into one family and hope that the combined function family is a PRF family. 
+Let $H:=\{ H^n:= \{ h^n_i: \{0,1\}^n \to \{0,1\} \}_{i\in \mathcal{I}^n} \}_{n\in\mathbb{N}}$. The key generation algorithm for $H^n$ samples a random $j\in \mathcal{J}^n$, samples a random $k\in \mathcal{K}^n$, and let $i = (j, k)$. To evaluate on any $x\in \{0,1\}^n$, we output $h^n_i(x) = f^n_j(x)\oplus g^n_k(x)$. 
+
+Prove that $H$ is a PRF family. 

@@ -1,0 +1,42 @@
+\paragraph{Definitions.}
+For reference, we recall the definitions of Chosen Plaintext Attack (CPA) security games for public key encryption (PKE) and secret key encryption (SKE).
+
+\begin{definition}[CPA security]
+We say a PKE (or SKE) scheme (Gen, Enc, Dec) is CPA-secure, if for all n.u.p.p.t. adversary $\mathsf{Adv}$, there exists a negligible function $\epsilon(\cdot)$ such that, $\forall n \in \mathbb{N}$,
+\begin{equation*}
+    Pr[ ~\mathsf{Adv}\text{ wins PKE(SKE)-CPA-Game} ~]\leq \frac{1}{2} + \epsilon(n),
+\end{equation*}
+where the PKE-CPA-Game is defined as
+\begin{enumerate}
+\item The challenger runs $\mathsf{Gen}(1^n)\rightarrow pk, sk$, sends $pk$ to the adversary. The challenger also picks a uniformly random $b\in\{0, 1\}$. 
+\item The adversary gets $(1^n, pk)$, chooses two messages from the message space $m_0, m_1\in M$ and sends $m_0, m_1$ to the challenger. 
+\item The challenger sends $\mathsf{Enc}_{pk}(m_b)$ to the adversary.
+\item The adversary outputs a bit $b'$, wins if $b' = b$.
+\end{enumerate}
+
+The SKE-CPA-Game is defined as
+\begin{enumerate}
+\item The challenger runs $\mathsf{Gen}(1^n)\rightarrow sk$. The challenger also picks a uniformly random $b\in\{0, 1\}$. 
+\item Repeats the following for $\ell\in \poly(n)$ rounds. For $i\in\{1, 2, ..., \ell\}$,  in the $i^{th}$ round:
+\begin{enumerate}
+\item The adversary sees $(1^n, \mathsf{Enc}_{sk}(m^1_b), ..., \mathsf{Enc}_{sk}(m^{i-1}_b))$, chooses two messages from the message space $m^i_0, m^i_1\in M$, sends $m^i_0, m^i_1$ to the challenger. 
+\item The challenger sends $\mathsf{Enc}_{sk}(m^i_b)$ to the adversary.
+\end{enumerate}
+\item The adversary outputs a bit $b'$, wins if $b' = b$.
+\end{enumerate}
+\end{definition}
+
+\paragraph{Problem 1 (18 points)}
+Recall that the RSA public-key encryption scheme works as follows. Let $p,q$ be two random large primes and $N=pq$. Randomly sample $e\in\mathbb{Z}_{\phi(N)}^*$ and compute $d$ such that $ed\equiv 1\pmod{\phi(N)}$. The public key consists of $(N,e)$ and the secret key is $d$. To encrypt a message $M\in\mathbb{Z}_N^*$, we compute $M^e\pmod N$. To decrypt, we compute $(M^{e})^d\equiv M\pmod N$. 
+
+It is clear that the encryption algorithm is not probabilistic, so the scheme does not satisfy CPA security. Consider the following modified encryption scheme that tries to strengthen the encryption scheme with probabilistic encryption. 
+\begin{itemize}
+    \item \emph{Key Generation:} Let $p,q$ be two random large primes and $N=pq$. Randomly samples $e_1,e_2\in\mathbb{Z}_{\phi(N)}^*$, and computes $d_1,d_2$ such that $e_1d_1\equiv e_2d_2\equiv 1\pmod{\phi(N)}$.
+    Let the public key be $(N, e_1, e_2)$. Let the secret key be $(d_1, d_2)$.
+    \item \emph{Encryption.} To encrypt a message $M\in\mathbb{Z}_N^*$, we randomly sample $R\in\mathbb{Z}_N^*$, and compute the ciphertext $ct=((MR)^{e_1} \bmod N, R^{e_2}\bmod N)$. 
+    \item \emph{Decryption.} Given a ciphertext $c = (c_1, c_2)$, compute $MR = c_1^{d_1} \bmod N$, $R = c_2^{d_2} \bmod N$, 
+    %It is clear that $\left((MR)^{e_1}\right)^{d_1} = MR$ and $(R^{e_2})^{d_2}=R$, 
+    and then compute $M$ by multiplying $MR$ with the multiplicative inverse of $R$ in $\mathbb{Z}_N$. 
+\end{itemize} 
+
+Show that the new PKE scheme does NOT satisfy CPA security.

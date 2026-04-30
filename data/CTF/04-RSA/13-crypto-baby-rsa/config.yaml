@@ -1,0 +1,6 @@
+category: RSA
+flag: utflag{just_send_plaintext}
+from: UTCTF-2024
+name: RSA-256
+time: 300
+type: static

@@ -1,0 +1,83 @@
+from pwn import *
+from helper import *
+from Crypto.Util.number import long_to_bytes
+
+def main():
+    # find q
+    p = remote('127.0.0.1', 1337)
+    print(p.recvuntil(b'[DET] M[0][2] = '))
+    p.sendline(b'1')
+    print(p.recvuntil(b'[DET] M[0][4] = '))
+    p.sendline(b'0')
+    print(p.recvuntil(b'[DET] M[1][1] = '))
+    p.sendline(b'0')
+    print(p.recvuntil(b'[DET] M[1][3] = '))
+    p.sendline(b'-1')
+    print(p.recvuntil(b'[DET] M[2][0] = '))
+    p.sendline(b'0')
+    print(p.recvuntil(b'[DET] M[2][2] = '))
+    p.sendline(b'0')
+    print(p.recvuntil(b'[DET] M[2][4] = '))
+    p.sendline(b'1')
+    print(p.recvuntil(b'[DET] M[4][0] = '))
+    p.sendline(b'1')
+    print(p.recvuntil(b'[DET] M[4][2] = '))
+    p.sendline(b'0')
+    det1 = int(p.recvlineS()[16:])
+    print(det1)
+    p.close()
+
+    # find r
+    p = remote('127.0.0.1', 1337)
+    print(p.recvuntil(b'[DET] M[0][2] = '))
+    p.sendline(b'1')
+    print(p.recvuntil(b'[DET] M[0][4] = '))
+    p.sendline(b'0')
+    print(p.recvuntil(b'[DET] M[1][1] = '))
+    p.sendline(b'1')
+    print(p.recvuntil(b'[DET] M[1][3] = '))
+    p.sendline(b'0')
+    print(p.recvuntil(b'[DET] M[2][0] = '))
+    p.sendline(b'0')
+    print(p.recvuntil(b'[DET] M[2][2] = '))
+    p.sendline(b'0')
+    print(p.recvuntil(b'[DET] M[2][4] = '))
+    p.sendline(b'1')
+    print(p.recvuntil(b'[DET] M[4][0] = '))
+    p.sendline(b'1')
+    print(p.recvuntil(b'[DET] M[4][2] = '))
+    p.sendline(b'0')
+    det2 = int(p.recvlineS()[16:])
+    print(det2)
+
+    # find p*r
+    p = remote('127.0.0.1', 1337)
+    print(p.recvuntil(b'[DET] M[0][2] = '))
+    p.sendline(b'0')
+    print(p.recvuntil(b'[DET] M[0][4] = '))
+    p.sendline(b'0')
+    print(p.recvuntil(b'[DET] M[1][1] = '))
+    p.sendline(b'1')
+    print(p.recvuntil(b'[DET] M[1][3] = '))
+    p.sendline(b'0')
+    print(p.recvuntil(b'[DET] M[2][0] = '))
+    p.sendline(b'0')
+    print(p.recvuntil(b'[DET] M[2][2] = '))
+    p.sendline(b'0')
+    print(p.recvuntil(b'[DET] M[2][4] = '))
+    p.sendline(b'1')
+    print(p.recvuntil(b'[DET] M[4][0] = '))
+    p.sendline(b'0')
+    print(p.recvuntil(b'[DET] M[4][2] = '))
+    p.sendline(b'-1')
+    det3 = int(p.recvlineS()[16:])
+    print(det3)
+
+    q = det1
+    p = det3 // det2
+    d = pow(e, -1, (q-1)*(p-1))
+    m = pow(c,d,n)
+    print(long_to_bytes(m))
+
+if __name__ == "__main__":
+    main()

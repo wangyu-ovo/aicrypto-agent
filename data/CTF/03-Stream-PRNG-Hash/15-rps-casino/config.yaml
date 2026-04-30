@@ -1,0 +1,6 @@
+category: Stream-PRNG-Hash
+flag: dice{wow_u_must_be_extremely_lucky_91ff5a34}
+from: dicectf-quals-2024
+name: rps-casino
+time: 300
+type: dynamic

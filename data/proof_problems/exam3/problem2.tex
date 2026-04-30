@@ -1,0 +1,12 @@
+\paragraph{Problem 2 (18 points)}
+
+Recall that the Decisional Diffie-Hellman (DDH) Assumption: given a p.p.t.~algorithm $G$ which takes $1^n$ as input, generates a pair of $\poly(n)$-bit primes $p,q$ and $g\in\mathbb{Z}_p$ satisfying $p=2q+1$, $g$ is a generator of a subgroup $H$ of $\mathbb{Z}_p^*$ such that the order of $H$ is $q$. The DDH Assumption says $(g, g^a, g^b, g^{ab})$ is computationally indistinguishable from $(g, g^a,g^b,g^c)$, where $a,b,c$ are sampled uniformly randomly from $\mathbb{Z}_q$. 
+
+Let $(\mathsf{Enc}',\mathsf{Dec}')$ be a secure private-key probabilistic encryption scheme, where the key space $\mathcal{K}_n=\{g^c\mid c\in\mathbb{Z}_q\}$. We define the following public-key encryption scheme.
+\begin{itemize}
+    \item \emph{Key generation.} $\mathsf{Gen}(1^n)$ runs $G(1^n)\to (p,q,g)$, and uniformly samples $a\gets\mathbb{Z}_q$. The public-key $pk:=(p,q,g,g^a)$, and the secret-key $sk:=a$. 
+    \item \emph{Encryption.} To encrypt a bit $m\in\{0,1\}$, $\mathsf{Enc}(pk=(p,q,g,A), m)$ first randomly samples a $b\gets\mathbb{Z}_q$, and outputs the cipher-text $ct=(g^b,\mathsf{Enc}'(A^b,m))$. (Here, $A$ is supposed to be $g^a$ and thus $A^b=g^{ab}$.)
+    \item \emph{Decryption.} To decrypt a cipher-text, $\mathsf{Dec}(sk=a,ct=(s,ct'))$ computes $s^a$ (which is supposed to be $(g^b)^a=g^{ab}$) and outputs $\mathsf{Dec}'(s^a,ct')$. 
+\end{itemize}
+
+Prove that $(\mathsf{Gen},\mathsf{Enc},\mathsf{Dec})$ is a secure public-key encryption scheme assuming the DDH Assumption holds and $(\mathsf{Enc}',\mathsf{Dec}')$ is a secure private-key probabilistic encryption scheme. For this problem you don't need to prove the correctness of the PKE scheme. 

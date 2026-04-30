@@ -1,0 +1,6 @@
+category: Stream-PRNG-Hash
+flag: lactf{we_love_blum-micali_generators_h1MNZuJSFjlAEwc1}
+from: lactf-2024
+name: pprngc
+time: 300
+type: dynamic

@@ -1,0 +1,6 @@
+category: ECC
+flag: AIS3{easy_integer_factorization_and_an_introduciton_to_mov_attacks}
+from: ais3 eof 2024
+name: Baby-ECDLP
+time: 300
+type: static

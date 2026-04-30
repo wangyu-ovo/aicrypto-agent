@@ -1,0 +1,1 @@
+FLAG = "DUCTF{should_have_used_authenticated_encryption!}"

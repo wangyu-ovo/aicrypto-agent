@@ -24,6 +24,7 @@ class TaskRunner:
     _MAX_STDOUT_PREVIEW = 4096  # truncate command output above this length
 
     def __init__(self, args) -> None:  # noqa: D401 – CLI wrapper passes argparse.Namespace
+        self.args = args
         self.task_path: Path = Path(args.task_path)
         
         self.model_config: Dict[str, Any] = get_model_config(args.model)
@@ -113,7 +114,7 @@ class TaskRunner:
         self.task_info["time"] = 300 if self.task_info["time"] < 60 else self.task_info["time"] * 3
 
         if not (self.resume and Path(self.task_info["read_path"]).exists()):
-            shutil.copytree(self.task_path / "public", self.task_info["read_path"], dirs_exist_ok=True)
+            shutil.copytree(self.task_path / "public", self.task_info["read_path"], dirs_exist_ok=True, ignore=shutil.ignore_patterns("._*"))
 
         # Move helper scripts next to write_path for easier import.
         for helper in ("helper.py", "helper.sage"):
@@ -138,7 +139,8 @@ class TaskRunner:
             self.init_user_prompt = create_task_prompt_from_task(self.task_info)
 
     def _init_agent(self) -> None:
-        system_prompt = Path("src/prompts/CTF/system_prompt").read_text()
+        prompt_path = getattr(self.args, "system_prompt", "src/prompts/CTF/system_prompt")
+        system_prompt = Path(prompt_path).read_text()
         self.log(f'System Prompt:\n\n{system_prompt}\n\n')
         self.agent = CryptoAgent(
             model_config=self.model_config,

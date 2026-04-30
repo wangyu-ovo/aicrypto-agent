@@ -1,0 +1,6 @@
+category: Block
+flag: lactf{seems_it_was_extremely_convenient_to_get_the_flag_too_heh}
+from: lactf-2025
+name: extremely-convenient-breaker
+time: 300
+type: dynamic

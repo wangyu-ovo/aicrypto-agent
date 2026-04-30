@@ -11,5 +11,7 @@ def single_task_args():
                         help="Maximum number of iterations before stopping") 
     parser.add_argument("--output-dir", type=str, default="auto",
                         help="Directory to save outputs including records and parameters (default: auto)")
+    parser.add_argument("--system-prompt", type=str, default="src/prompts/CTF/system_prompt",
+                        help="Path to system prompt file")
     
     return parser.parse_args()

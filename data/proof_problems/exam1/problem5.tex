@@ -1,0 +1,12 @@
+\paragraph{Problem 5 (18 points)} 
+It is well-known that neural networks can be very hard to analyze, so it is natural to think about whether we can construct pseudorandom generators from neural networks. Consider the following Boolean function inspired by neural networks: 
+\begin{itemize}[itemsep=0pt]
+\item Let $A\in\{0,1\}^{m\times n}$ be a fixed Boolean matrix, where $m=10n$. 
+\item Given an input $x\in\{0,1\}^n$, the first layer computes a linear function $y=Ax\in\{0,1\}^m$.
+\item In the second layer, we compute a (possibly) non-linear function $g:\{0,1\}^m\to\{0,1\}^{m/2}$, where given $y=(y_1,y_2,\dots,y_{m})\in\{0,1\}^m$, the $i$-th bit of $g(y)$ is $h(y_{2i-1},y_{2i})$, for some fixed Boolean function $h:\{0,1\}\times\{0,1\}\to\{0,1\}$. 
+\end{itemize}
+We call this function $f_{A,h}:\{0,1\}^n\to\{0,1\}^{5n}$.
+
+Prove: there does NOT exist a matrix $A$ and a Boolean function $h$ such that $f_{A,h}$ is a pseudorandom generator. 
+
+You may (or may not) need the classification of all 16 binary Boolean functions: trivial functions $f(x_1,x_2)=c_1$, degenerate functions $f(x_1,x_2)=x_i\oplus c_1$ ($i\in\{1,2\}$), $\land$-type functions $f(x_1,x_2)=((x_1\oplus c_1)\land(x_2\oplus c_2))\oplus c_3$, $\oplus$-type functions $f(x_1,x_2)=x_1\oplus x_2\oplus c_1$, where $c_1,c_2,c_3\in\{0,1\}$.

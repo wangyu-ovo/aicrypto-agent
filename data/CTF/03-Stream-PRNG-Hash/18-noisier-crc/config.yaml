@@ -1,0 +1,6 @@
+category: Stream-PRNG-Hash
+flag: SEKAI{4R3_Y0U_cRc_M4s73R?}
+from: sekaictf-2023
+name: noisier-crc
+time: 300
+type: dynamic

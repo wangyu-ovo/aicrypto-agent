@@ -1,0 +1,1 @@
+FLAG = "DUCTF{d0nt_w0rry_th3_3mus_w1ll_b3_0kay}"

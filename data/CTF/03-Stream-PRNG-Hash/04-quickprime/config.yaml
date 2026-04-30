@@ -1,0 +1,6 @@
+category: Stream-PRNG-Hash
+flag: lactf{w41t_th1s_1snt_s3cur3_4t_4ll_???}
+from: lactf-2025
+name: quickprime
+time: 2900
+type: dynamic

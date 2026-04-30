@@ -21,13 +21,18 @@ MODEL_MAP = {
     "o3-mini":OpenAIReasoningModel,
     "o3-mini-high":OpenAIReasoningModel,
     "o3-mini-low":OpenAIReasoningModel,
+    "claude-opus-4-7": ClaudeModel,
+    "claude-opus-4-7-thinking": ClaudeModel,
     "claude-3.7-sonnet": ClaudeModel,
     "claude-3.7-sonnet-thinking": ClaudeModel,
     "claude-4.0-sonnet": ClaudeModel,
     "claude-4.0-sonnet-thinking": ClaudeModel,
     'gemini-2.5-pro-preview': GeminiReasoningModel,
+    'gemini-3.1-pro-preview': GeminiReasoningModel,
     'deepseek-v3': DeepSeekModel,
     'deepseek-r1': DeepSeekModel,
+    'deepseek-chat': DeepSeekModel,
+    'deepseek-reasoner': DeepSeekModel,
     'doubao-seed-1.6': Doubao,
     'doubao-seed-1.6-thinking': Doubao
 }

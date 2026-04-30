@@ -1,0 +1,9 @@
+\paragraph{Problem 2 (18 points)}
+
+Let $G:=\{ G^n: \{0,1\}^n \to \{0,1\}^{2n}  \}_{n\in\mathbb{N}}$ be a family of PRGs. For all $n\in\mathbb{N}$, let $h^n: \{0,1\}^n \to \{0,1\}$ be a hardcore bit of $G^n$. 
+
+Let $L:=\{ L^n: \{0,1\}^{n} \to \{0,1\}^{2n} \}_{n\in\mathbb{N}}$ be defined by: for any $x\in\{0,1\}^n$ 
+\[ L^n(x) := G^n(x) \oplus (0^{2n-1} | h^n(x)).   \]
+That is, $L^n(x)$ outputs the first $2n-1$ bits of $G^n(x)$, and also the last bit of $G^n(x)$ XORed with $h^n(x)$.
+
+Prove that $L$ is a family of PRGs.

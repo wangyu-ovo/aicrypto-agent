@@ -1,0 +1,6 @@
+category: RSA
+flag: AIS3{this_is_what_could_happen_to_rsa_if_it_is_an_additively_homomorphic_encryption}
+from: ais3 eof 2025
+name: prsa
+time: 300
+type: dynamic

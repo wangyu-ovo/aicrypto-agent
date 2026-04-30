@@ -1,0 +1,6 @@
+category: Stream-PRNG-Hash
+flag: hitcon{larger_states_is_still_no_match_of_fast_correlation_attacks!}
+from: hitcon 2024
+name: Hyper512
+time: 300
+type: static

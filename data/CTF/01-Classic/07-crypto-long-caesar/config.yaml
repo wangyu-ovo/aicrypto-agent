@@ -1,0 +1,6 @@
+category: classic
+flag: utflag{rip_dcode}
+from: UTCTF-2024
+name: Long Caesar
+time: 300
+type: static

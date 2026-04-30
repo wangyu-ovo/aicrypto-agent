@@ -1,0 +1,6 @@
+category: Others
+flag: hitcon{integer_overflow_is_just_a_piece_of_cake_for_LLL!}
+from: hitcon 2024
+name: BrokenShare
+time: 300
+type: static

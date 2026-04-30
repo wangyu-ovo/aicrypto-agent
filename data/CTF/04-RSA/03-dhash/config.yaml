@@ -1,0 +1,6 @@
+category: RSA
+flag: irisctf{no_order_factorization_no_problem}
+from: iris-2024
+name: DHash
+time: 300
+type: dynamic

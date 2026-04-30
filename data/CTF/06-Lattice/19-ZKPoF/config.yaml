@@ -1,0 +1,6 @@
+category: Lattice
+flag: hitcon{the_error_is_leaking_some_knowledge}
+from: hitcon 2024
+name: ZKPoF
+time: 300
+type: dynamic

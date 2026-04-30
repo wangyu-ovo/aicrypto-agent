@@ -1,0 +1,2038 @@
+[
+    {
+        "id": 0,
+        "question": "The following ciphertext was encoded via Caesar cipher with a fixed shift of three letters. Determine the original plaintext: HQFUBSWHG ZRUG.",
+        "choice": [
+            "ABANDONED WORD",
+            "ENCRYPTED TEXT",
+            "ABANDONED TEXT",
+            "ENCRYPTED WORD",
+            "None of the above"
+        ],
+        "answer": [
+            3
+        ],
+        "label": "classic"
+    },
+    {
+        "id": 1,
+        "question": "On Encrypting \"thepepsiisintherefrigerator\" using Vigen\u00e8re Cipher System using the keyword \"HUMOR\" we get cipher text.",
+        "choice": [
+            "abqqfduugzulqtipaqfraidokvl",
+            "abqdvwmugzulqtipaqfraidokvl",
+            "abqqfsuugzukqtipaqfraidokvl",
+            "abqdvsuugzulqtigaqfraidokvl",
+            "abqdvwmuwjphfvvyyrfznydokvl"
+        ],
+        "answer": [
+            4
+        ],
+        "label": "classic"
+    },
+    {
+        "id": 2,
+        "question": "In the Triple DES encryption scheme, the total key length is ( ) and the ``meet-in-the-middle'' attack requires ( ) computational tests to breach the cipher.",
+        "choice": [
+            "${168}$, $2^{111}$",
+            "${192}$, $2^{112}$",
+            "${184}$, $2^{111}$",
+            "${168}$, $2^{112}$",
+            "None of the above"
+        ],
+        "answer": [
+            3
+        ],
+        "label": "symmetric"
+    },
+    {
+        "id": 3,
+        "question": "Which of the following is a valid property for congruence?",
+        "choice": [
+            "$a \\equiv b \\ (\\mathrm{mod}\\ n)$ if $n\\mid(a-b)$",
+            "$a \\equiv b \\ (\\mathrm{mod}\\ n)$ implies $b \\equiv a \\ (\\mathrm{mod}\\ n)$",
+            "$a \\equiv b \\ (\\mathrm{mod}\\ n)$ and $b \\equiv c \\ (\\mathrm{mod}\\ n)$ implies $a \\equiv c \\ (\\mathrm{mod}\\ n)$",
+            "All of the mentioned",
+            "None of the above"
+        ],
+        "answer": [
+            3
+        ],
+        "label": "math"
+    },
+    {
+        "id": 4,
+        "question": "Assuming the plaintext is guaranteed to be unique and at most one block long, which DES mode minimizes overhead?",
+        "choice": [
+            "Cipher Block Chaining (CBC)",
+            "Output Feedback Modes (OFB)",
+            "Electronic Code Book (ECB)",
+            "Cipher Feedback Mode (CFB)",
+            "None of the above"
+        ],
+        "answer": [
+            2
+        ],
+        "label": "symmetric"
+    },
+    {
+        "id": 5,
+        "question": "Using the Linear Congruential Method (LCM) with parameters $a = 7$, $c = 0$, and $m = 32$ ($X_{n+1} \\equiv (aX_n + c) \\mod m$), determine the period of the generated sequence.",
+        "choice": [
+            "11",
+            "4",
+            "13",
+            "7",
+            "None of the above"
+        ],
+        "answer": [
+            1
+        ],
+        "label": "symmetric"
+    },
+    {
+        "id": 6,
+        "question": "In the Linear Congruential Method (LCM), what is the most suitable choice for the modulus $m$ to maximize the period?",
+        "choice": [
+            "$2^{31} - 1$",
+            "$2^{32}$",
+            "$2^{31}$",
+            "$2^{32} - 1$",
+            "None of the above"
+        ],
+        "answer": [
+            0
+        ],
+        "label": "symmetric"
+    },
+    {
+        "id": 7,
+        "question": "Find the solution of $x^2 \\equiv 3 \\mod 11$.",
+        "choice": [
+            "$x \\equiv -9 \\mod 11$ and $x \\equiv 9 \\mod 11$",
+            "$x \\equiv 9 \\mod 11$",
+            "$x \\equiv 5 \\mod 11$ and $x \\equiv 6 \\mod 11$",
+            "No Solution",
+            "None of the above"
+        ],
+        "answer": [
+            2
+        ],
+        "label": "math"
+    },
+    {
+        "id": 8,
+        "question": "Let $(E, D)$ be a (one-time) semantically secure cipher with key space $K = \\{0,1\\}^\\ell$. A bank wishes to split a decryption key $k \\in \\{0,1\\}^\\ell$ into three pieces $p_1, p_2, p_3$ so that any two of the pieces enable decryption using $k$, but no single piece can decrypt. The bank generates two random pairs $(k_1, k_1')$ and $(k_2, k_2')$ such that $k_1 \\oplus k_1' = k_2 \\oplus k_2' = k$. How should the bank assign pieces so that any two pieces enable decryption using $k$, but no single piece can decrypt?",
+        "choice": [
+            "$p_1 = (k_1, k_2)$, $p_2 = (k_1', k_2')$, $p_3 = (k_2')$",
+            "$p_1 = (k_1, k_2)$, $p_2 = (k_2, k_2')$, $p_3 = (k_2')$",
+            "$p_1 = (k_1, k_2)$, $p_2 = (k_1', k_2)$, $p_3 = (k_2')$",
+            "$p_1 = (k_1, k_2)$, $p_2 = (k_1')$, $p_3 = (k_2')$",
+            "None of the above"
+        ],
+        "answer": [
+            2
+        ],
+        "label": "misc"
+    },
+    {
+        "id": 9,
+        "question": "Suppose Alice is broadcasting packets to 6 recipients $B_1, \\ldots, B_6$. Privacy is not important, but integrity is. Each recipient should be assured that the packets are from Alice. Alice sets up 4 secret keys $S = \\{k_1, k_2, k_3, k_4\\}$. She gives each user $B_i$ a subset $S_i \\subseteq S$ of the keys. When Alice transmits a packet, she appends 4 tags computed with each of her 4 keys. User $B_i$ accepts a packet as valid only if all tags corresponding to his keys in $S_i$ are valid. \nHow should Alice assign keys to the 6 users so that no single user can forge packets on behalf of Alice and fool some other user?",
+        "choice": [
+            "$S_1 = \\{k_1, k_2\\}$, $S_2 = \\{k_1, k_3, k_4\\}$, $S_3 = \\{k_1, k_4\\}$, \\\\\n$S_4 = \\{k_2, k_3\\}$, $S_5 = \\{k_2, k_3, k_4\\}$, $S_6 = \\{k_3, k_4\\}$",
+            "$S_1 = \\{k_2, k_4\\}$, $S_2 = \\{k_2, k_3\\}$, $S_3 = \\{k_3, k_4\\}$, \\\\\n$S_4 = \\{k_1, k_3\\}$, $S_5 = \\{k_1, k_2\\}$, $S_6 = \\{k_1, k_4\\}$",
+            "$S_1 = \\{k_1, k_2\\}$, $S_2 = \\{k_1, k_3\\}$, $S_3 = \\{k_1, k_4\\}$, \\\\\n$S_4 = \\{k_2, k_3, k_4\\}$, $S_5 = \\{k_2, k_3\\}$, $S_6 = \\{k_3, k_4\\}$",
+            "$S_1 = \\{k_1, k_2\\}$, $S_2 = \\{k_1\\}$, $S_3 = \\{k_1, k_4\\}$, \\\\\n$S_4 = \\{k_2, k_3\\}$, $S_5 = \\{k_2, k_4\\}$, $S_6 = \\{k_3, k_4\\}$",
+            "None of the above"
+        ],
+        "answer": [
+            1
+        ],
+        "label": "misc"
+    },
+    {
+        "id": 10,
+        "question": "Suppose $H_1$ and $H_2$ are collision resistant hash functions mapping inputs in a set $M$ to $\\{0,1\\}^{256}$. Our goal is to show that the function $H_2(H_1(m))$ is also collision resistant. We prove the contrapositive: suppose $H_2(H_1(\\cdot))$ is not collision resistant, that is, we are given $x \\neq y$ such that $H_2(H_1(x)) = H_2(H_1(y))$. We build a collision for either $H_1$ or for $H_2$. This will prove that if $H_1$ and $H_2$ are collision resistant then so is $H_2(H_1(\\cdot))$. Which of the following must be true",
+        "choice": [
+            "Either $H_2(x), H_2(y)$ are a collision for $H_1$ or $x, y$ are a collision for $H_2$.",
+            "Either $x, H_1(y)$ are a collision for $H_2$ or $H_2(x), y$ are a collision for $H_1$.",
+            "Either $x, y$ are a collision for $H_1$ or $H_1(x), H_1(y)$ are a collision for $H_2$.",
+            "Either $x, y$ are a collision for $H_2$ or $H_1(x), H_1(y)$ are a collision for $H_1$.",
+            "None of the above"
+        ],
+        "answer": [
+            2
+        ],
+        "label": "symmetric"
+    },
+    {
+        "id": 11,
+        "question": "Let $(E,D)$ be a secure tweakable block cipher. Define the following MAC $(S,V)$$$S(k,m) := E(k,m,0) \\quad \\text{and} \\quad V(k,m,\\text{tag}) := \\begin{cases} 1 & \\text{if } E(k,m,0) = \\text{tag} \\\\ 0 & \\text{otherwise} \\end{cases}$$ \nIn other words, the message $m$ is used as the tweak, and the plaintext given to $E$ is always set to $0$. Is this MAC secure?",
+        "choice": [
+            "It depends on the specific tweakable block cipher.",
+            "Yes",
+            "No",
+            "None of the above"
+        ],
+        "answer": [
+            1
+        ],
+        "label": "symmetric"
+    },
+    {
+        "id": 12,
+        "question": "Consider a key exchange protocol using an online Trusted Third Party (TTP). Suppose Alice, Bob, and Carol are three users of this system, each sharing a secret key with the TTP denoted $k_a, k_b, k_c$ respectively. They wish to generate a group session key $k_{ABC}$ that will be known to Alice, Bob, and Carol, but unknown to an eavesdropper. How would you modify a typical TTP-based protocol to accommodate this group key exchange? (Note: assume all these protocols are insecure against active attacks).",
+        "choice": [
+            "\\begin{minipage}[t]{\\linewidth}\nAlice contacts the TTP. The TTP generates a random $k_{AB}$ and a random $k_{AC}$. The TTP sends to Alice: \\\\\n$E(k_a, k_{AB})$, $ticket_1 \\leftarrow E(k_b, k_{AB})$, $ticket_2 \\leftarrow E(k_c, k_{AC})$. \\\\\nAlice sends $ticket_1$ to Bob and $ticket_2$ to Carol.\n\\end{minipage}",
+            "\\begin{minipage}[t]{\\linewidth}\nAlice contacts the TTP. The TTP generates a random $k_{ABC}$ and sends to Alice: \\\\\n$E(k_a, k_{ABC})$, $ticket_1 \\leftarrow E(k_b, k_{ABC})$, $ticket_2 \\leftarrow E(k_c, k_{ABC})$. \\\\\nAlice sends $ticket_1$ to Bob and $ticket_2$ to Carol.\n\\end{minipage}",
+            "\\begin{minipage}[t]{\\linewidth}\nBob contacts the TTP. The TTP generates a random $k_{AB}$ and a random $k_{BC}$. The TTP sends to Bob: \\\\\n$E(k_a, k_{AB})$, $ticket_1 \\leftarrow E(k_a, k_{AB})$, $ticket_2 \\leftarrow E(k_c, k_{BC})$. \\\\\nBob sends $ticket_1$ to Alice and $ticket_2$ to Carol.\n\\end{minipage}",
+            "\\begin{minipage}[t]{\\linewidth}\nAlice contacts the TTP. The TTP generates a random $k_{ABC}$ and sends to Alice: \\\\\n$E(k_a, k_{ABC})$, $ticket_1 \\leftarrow k_{ABC}$, $ticket_2 \\leftarrow k_{ABC}$. \\\\\nAlice sends $ticket_1$ to Bob and $ticket_2$ to Carol.\n\\end{minipage}",
+            "None of the above"
+        ],
+        "answer": [
+            1
+        ],
+        "label": "misc"
+    },
+    {
+        "id": 13,
+        "question": "Suppose we modify the Diffie-Hellman protocol. Alice chooses a random $a \\in \\{1, \\ldots, p-1\\}$ and sends $A = g^a \\pmod{p}$ to Bob. Bob, however, chooses a random $b \\in \\{1, \\ldots, p-1\\}$ and sends $B = g^{1/b} \\pmod{p}$ to Alice (where $1/b$ denotes $b^{-1} \\pmod{p-1}$, the modular multiplicative inverse of $b$ modulo $p-1$). What shared secret can they generate, and how would they do it?",
+        "choice": [
+            "Shared secret is $g^{ab}$. Alice computes $B^{1/a} \\pmod{p}$ and Bob computes $A^b \\pmod{p}$.",
+            "Shared secret is $g^{a/b}$. Alice computes $B^a \\pmod{p}$ and Bob computes $A^{1/b} \\pmod{p}$.",
+            "Shared secret is $g^{b/a}$. Alice computes $B^a \\pmod{p}$ and Bob computes $A^{1/b} \\pmod{p}$.",
+            "Shared secret is $g^{a/b}$. Alice computes $B^{1/a} \\pmod{p}$ and Bob computes $A^b \\pmod{p}$.",
+            "None of the above"
+        ],
+        "answer": [
+            1
+        ],
+        "label": "asymmetric"
+    },
+    {
+        "id": 14,
+        "question": "Consider a toy key exchange protocol using public key encryption. Suppose that when sending his reply $c \\leftarrow E(pk, x)$ to Alice, Bob appends a MAC $t:= S(x, c)$ to the ciphertext, so that what is sent to Alice is the pair $(c,t)$. Alice verifies the tag $t$ and rejects the message from Bob if the tag does not verify. Will this additional step prevent the man-in-the-middle attack described in lectures?",
+        "choice": [
+            "Yes",
+            "It depends on what public key encryption system is used.",
+            "No",
+            "It depends on what MAC system is used.",
+            "None of the above"
+        ],
+        "answer": [
+            2
+        ],
+        "label": "misc"
+    },
+    {
+        "id": 15,
+        "question": "Suppose $n+1$ parties, denoted $B, A_1, \\ldots, A_n$, wish to establish a shared group key. They require a protocol such that upon completion, all parties possess a common secret key $k$. An eavesdropper observing the entire communication must not be able to determine $k$. The parties agree on the following protocol, which operates in a group $G$ of prime order $q$ with a generator $g$ \\begin{enumerate} \n\\item For $i=1, \\ldots, n$, party $A_i$ chooses a random secret integer $a_i \\in \\{1, \\ldots, q-1\\}$ (i.e., $a_i \\in \\mathbb{Z}_q^*$) and sends $X_i = g^{a_i}$ to Party $B$. \n\\item Party $B$ generates a random secret integer $b \\in \\{1, \\ldots, q-1\\}$ (i.e., $b \\in \\mathbb{Z}_q^*$). For each $i=1, \\ldots, n$, Party $B$ computes $Y_i = X_i^b = (g^{a_i})^b = g^{a_i b}$ and sends $Y_i$ to Party $A_i$. \n\\end{enumerate} \nThe intended shared group key is $k = g^b$. Party $B$ can compute this key directly since $B$ knows $b$. How can each Party $A_i$ (who knows $a_i$ and receives $Y_i$) compute this group key $k=g^b$?",
+        "choice": [
+            "Party $A_i$ computes $g^b$ as $Y_i^{a_i}$.",
+            "Party $A_i$ computes $g^b$ as $Y_i^{1/a_i}$.",
+            "Party $A_i$ computes $g^b$ as $Y_i - a_i$.",
+            "Party $A_i$ computes $g^b$ as $(Y_i^{-1})^{1/a_i}$.",
+            "None of the above"
+        ],
+        "answer": [
+            1
+        ],
+        "label": "asymmetric"
+    },
+    {
+        "id": 16,
+        "question": "Recall that the standard RSA trapdoor permutation operates in the group $\\mathbb{Z}_N^*$, where $N$ is the product of two large distinct primes. The public key is $(N,e)$ and the private key is $(N,d)$, where $d$ is the modular multiplicative inverse of $e$ modulo $\\phi(N)$ (i.e., $e \\cdot d \\equiv 1 \\pmod{\\phi(N)}$). \n \nSuppose, hypothetically, that RSA was defined modulo a prime $p$ instead of a composite $N$. In this modified scenario, the \"public key\" would be $(p,e)$. How would one compute the corresponding \"private key\" exponent $d$ given $(p,e)$?",
+        "choice": [
+            "$d \\leftarrow e^{-1} \\pmod{p^2}$",
+            "$d \\leftarrow e^2 \\pmod{p}$",
+            "$d \\leftarrow e^{-1} \\pmod{p-1}$",
+            "$d \\leftarrow -e \\pmod{p}$",
+            "None of the above"
+        ],
+        "answer": [
+            2
+        ],
+        "label": "asymmetric"
+    },
+    {
+        "id": 17,
+        "question": "Let $(E, D)$ be a CPA-secure cipher defined over $(K, M, C)$ and let $H_1: M \\to T$ and $H_2: C \\to T$ be collision-resistant hash functions. Consider the following modified encryption schemes\\medskip \n \n\\textbf{Scheme A):} \n\\begin{itemize} \n\\item Encryption: $E_1(k, m) := E(k, m) \\| E(k, m)$ (concatenation of two ciphertexts) \n\\item Decryption: $D_1(k, c_1 \\| c_2) := \\begin{cases} D(k, c_1) & \\text{if } D(k, c_1) = D(k, c_2) \\\\ \\text{reject} & \\text{otherwise} \\end{cases}$ \n\\end{itemize} \n\\medskip \n \n\\textbf{Scheme B):} \n\\begin{itemize} \n\\item Encryption: $E_2(k, m) := \\text{let } c \\leftarrow E(k, m); \\text{ output } (c, c)$ \n\\item Decryption: $D_2(k, (c_1, c_2)) := \\begin{cases} D(k, c_1) & \\text{if } c_1 = c_2 \\\\ \\text{reject} & \\text{otherwise} \\end{cases}$ \n\\end{itemize} \n\\medskip \n \n\\textbf{Scheme C):} \n\\begin{itemize} \n\\item Encryption: $E_3(k, m) := \\text{let } c \\leftarrow E(k, m); \\text{ output } (c, H_1(m))$ \n\\item Decryption: $D_3(k, (c, h)) := \\begin{cases} D(k, c) & \\text{if } H_1(D(k, c)) = h \\\\ \\text{reject} & \\text{otherwise} \\end{cases}$ \n\\end{itemize} \n\\medskip \n \n\\textbf{Scheme D):} \n\\begin{itemize} \n\\item Encryption: $E_4(k, m) := \\text{let } c \\leftarrow E(k, m); \\text{ output } (c, H_2(c))$ \n\\item Decryption: $D_4(k, (c, h)) := \\begin{cases} D(k, c) & \\text{if } H_2(c) = h \\\\ \\text{reject} & \\text{otherwise} \\end{cases}$ \n\\end{itemize} \n\\medskip \n \nWhich of the above schemes guarantees authenticated encryption (AE) security (Authenticated-encryption (AE) = CPA privacy + ciphertext-integrity (INT-CTXT))?",
+        "choice": [
+            "Scheme A",
+            "Scheme B",
+            "Scheme C",
+            "Scheme D",
+            "None of the above"
+        ],
+        "answer": [
+            4
+        ],
+        "label": "symmetric"
+    },
+    {
+        "id": 18,
+        "question": "Which of the following AES modes of operation fails to provide semantic security under standard assumptions, meaning it may leak patterns from plaintext to ciphertext?",
+        "choice": [
+            "AES in CBC mode with a random IV",
+            "AES in CTR mode",
+            "AES in ECB mode",
+            "AES in GCM mode",
+            "None of the above"
+        ],
+        "answer": [
+            2
+        ],
+        "label": "symmetric"
+    },
+    {
+        "id": 19,
+        "question": "In the idealized Random Oracle Model, which cryptographic primitive is most often analyzed as if it were a truly random function to support security proofs?",
+        "choice": [
+            "Block ciphers",
+            "Public-key encryption systems",
+            "Cryptographic hash functions",
+            "Message authentication codes",
+            "None of the above"
+        ],
+        "answer": [
+            2
+        ],
+        "label": "misc"
+    },
+    {
+        "id": 20,
+        "question": "Which of the following values among 17, 20, 38, and 50 does \\textbf{NOT} admit primitive roots in the multiplicative group $\\mathbb{Z}_n^*$?",
+        "choice": [
+            "17",
+            "50",
+            "38",
+            "20",
+            "None of the above"
+        ],
+        "answer": [
+            3
+        ],
+        "label": "math"
+    },
+    {
+        "id": 21,
+        "question": "Evaluate Euler's totient function: $\\phi(25) = $",
+        "choice": [
+            "22",
+            "24",
+            "20",
+            "25",
+            "None of the above"
+        ],
+        "answer": [
+            2
+        ],
+        "label": "math"
+    },
+    {
+        "id": 22,
+        "question": "Find an integer $x$ such that $0 \\le x \\le 28$ and $x^{85} \\equiv 6 \\pmod{35}$. Which value of $x$ satisfies the congruence?",
+        "choice": [
+            "6",
+            "28",
+            "8",
+            "32",
+            "None of the above"
+        ],
+        "answer": [
+            0
+        ],
+        "label": "math"
+    },
+    {
+        "id": 23,
+        "question": "Which of the following is the smallest positive integer $x$ that satisfies the following system of congruences:\n\\begin{align*}\n x &\\equiv 2 \\pmod{3},\\ \n x &\\equiv 5 \\pmod{7},\\\n x &\\equiv 11 \\pmod{13}.\\end{align*}",
+        "choice": [
+            "16",
+            "54",
+            "89",
+            "121",
+            "None of the above"
+        ],
+        "answer": [
+            3
+        ],
+        "label": "math"
+    },
+    {
+        "id": 24,
+        "question": "Using Rabin cryptosystem with parameters $p=23$ and $q=7$, compute the ciphertext for plaintext $28$. The ciphertext is",
+        "choice": [
+            "42",
+            "93",
+            "140",
+            "127",
+            "None of the above"
+        ],
+        "answer": [
+            2
+        ],
+        "label": "asymmetric"
+    },
+    {
+        "id": 25,
+        "question": "Within the ElGamal cryptosystem, suppose the prime $p = 31$. If $g$ is chosen as the smallest primitive root modulo $p$ and the private key $d = 10$, compute the value of $y$ such that $y \\equiv g^d \\bmod p$.",
+        "choice": [
+            "24",
+            "36",
+            "25",
+            "62",
+            "None of the above"
+        ],
+        "answer": [
+            2
+        ],
+        "label": "asymmetric"
+    },
+    {
+        "id": 26,
+        "question": "Let $E(k,x)$ be a secure block cipher. Consider the following tweakable block cipher construction$$E'((k_1,k_2), t, x) = E(k_1, x) \\oplus E(k_2, t)$$ \nwhere $(k_1, k_2)$ is the key, $t$ is the tweak, and $x$ is the plaintext block. Is this tweakable block cipher secure?",
+        "choice": [
+            "Yes, it is secure assuming $E$ is a secure block cipher.",
+            "\\begin{minipage}[t]{\\linewidth}\nNo because for $x \\neq x'$ we have \\\\\n$E'((k_1,k_2), 0, x) \\oplus E'((k_1,k_2), 0, x) = E'((k_1,k_2), 0, x') \\oplus E'((k_1,k_2), 0, x')$\n\\end{minipage}",
+            "\\begin{minipage}[t]{\\linewidth}\nNo because for $t \\neq t'$ we have \\\\\n$E'((k_1,k_2), t, 0) \\oplus E'((k_1,k_2), t, 1) = E'((k_1,k_2), t', 0) \\oplus E'((k_1,k_2), t', 1)$\n\\end{minipage}",
+            "\\begin{minipage}[t]{\\linewidth}\nNo because for $t \\neq t'$ we have \\\\\n$E'((k_1,k_2), t, 0) \\oplus E'((k_1,k_2), t', 1) = E'((k_1,k_2), t', 1) \\oplus E'((k_1,k_2), t', 0)$\n\\end{minipage}",
+            "\\begin{minipage}[t]{\\linewidth}\nNo because for $x \\neq x'$ and $t \\neq t'$ we have \\\\\n$E'((k_1,k_2), t, x) \\oplus E'((k_1,k_2), t', x) = E'((k_1,k_2), t, x') \\oplus E'((k_1,k_2), t', x)$\n\\end{minipage}",
+            "None of the above"
+        ],
+        "answer": [
+            2
+        ],
+        "label": "symmetric"
+    },
+    {
+        "id": 27,
+        "question": "Given a superincreasing sequence $l=\\{38, 20, 9, 4, 2, 1\\}$ (The sequence is from right to left, corresponding to the bits from low to high.) that sums to 23, determine the binary vector $n$ which yields this total.",
+        "choice": [
+            "011111",
+            "010011",
+            "010111",
+            "010010",
+            "None of the above"
+        ],
+        "answer": [
+            1
+        ],
+        "label": "asymmetric"
+    },
+    {
+        "id": 28,
+        "question": "For RSA with $p = 11$, $q = 17$, and public exponent $e = 7$, decrypt the ciphertext 44 to recover the plaintext.",
+        "choice": [
+            "88",
+            "22",
+            "13",
+            "41",
+            "None of the above"
+        ],
+        "answer": [
+            1
+        ],
+        "label": "asymmetric"
+    },
+    {
+        "id": 29,
+        "question": "Consider a knapsack cryptosystem where letters A-Z are mapped to integers 0 through 25. You receive ciphertext values 14, 25, and 89. If the public key is \\{57, 14, 3, 24, 8\\} (The sequence is from right to left, corresponding to the bits from low to high.), what plaintext corresponds to this message?",
+        "choice": [
+            "INK",
+            "TIN",
+            "KIN",
+            "INT",
+            "None of the above"
+        ],
+        "answer": [
+            3
+        ],
+        "label": "asymmetric"
+    },
+    {
+        "id": 30,
+        "question": "How many real versus imaginary roots (when $y=0$) exist for the elliptic curve equation $y^2 = x^3 - 4x$?",
+        "choice": [
+            "All solutions are imaginary",
+            "All roots are real",
+            "Two real, one imaginary root",
+            "One real, two imaginary roots",
+            "None of the above"
+        ],
+        "answer": [
+            1
+        ],
+        "label": "math"
+    },
+    {
+        "id": 31,
+        "question": "Let $P = (4, 3.464)$ be a point on the elliptic curve $y^2 = x^3 - 17x + 16$ over the real numbers. What is the result of computing $2P$ on this curve?",
+        "choice": [
+            "(11.694, -43.723)",
+            "(12.022, -39.362)",
+            "(43.022, 39.362)",
+            "(32.022, 42.249)",
+            "None of the above"
+        ],
+        "answer": [
+            1
+        ],
+        "label": "asymmetric"
+    },
+    {
+        "id": 32,
+        "question": "Bob chooses the elliptic curve $E_{67}(2, 3)$ defined over $GF(67)$, along with the base point $e_1 = (2, 22)$ and a private scalar $d = 4$. He computes $e_2 = d \\cdot e_1$ and publishes $(E, e_1, e_2)$. If Alice wishes to send $P = (24, 26)$ and randomly selects $r = 2$, what are the resulting ciphertext points $C_1$ and $C_2$? ($E_p(a, b) :  y^2 = x^3 + ax+b \\mod p$)",
+        "choice": [
+            "C1=(35,1) ; C2 =(21,44)",
+            "C1=(44,21) ; C2 =(1,35)",
+            "C1=(44,21) ; C2 =(44,21)",
+            "C1=(21,44); C2 =(35,1)",
+            "None of the above"
+        ],
+        "answer": [
+            0
+        ],
+        "label": "asymmetric"
+    },
+    {
+        "id": 33,
+        "question": "Which of the following best characterizes the mathematical relationship between inputs and outputs in a standard MAC algorithm, considering multiple inputs can lead to the same authentication tag?",
+        "choice": [
+            "injective (one-to-one) mapping",
+            "many-to-one transformation",
+            "surjective (onto) mapping",
+            "None of the above"
+        ],
+        "answer": [
+            1
+        ],
+        "label": "misc"
+    },
+    {
+        "id": 34,
+        "question": "Given a MAC algorithm with a key of size $k$ bits and an authentication tag of $n$ bits, what is the expected computational effort required for a brute-force attack that attempts to guess either the key or a valid tag?",
+        "choice": [
+            "$2^k$",
+            "$2^n$",
+            "$\\min(2^k,\\ 2^n)$",
+            "$\\frac{2^k}{2^n}$",
+            "None of the above"
+        ],
+        "answer": [
+            2
+        ],
+        "label": "misc"
+    },
+    {
+        "id": 35,
+        "question": "What is the estimated number of operations required to generate a collision for a hashing algorithm $\\mathbf{H}: \\{0, 1\\}^* \\rightarrow \\{0, 1\\}^n$ ?",
+        "choice": [
+            "$\\mathcal{O}(2^{n/2})$",
+            "$\\mathcal{O}(2^n)$",
+            "$\\mathcal{O}(2^{2n})$",
+            "$\\mathcal{O}(2^{n-1})$",
+            "None of the above"
+        ],
+        "answer": [
+            0
+        ],
+        "label": "symmetric"
+    },
+    {
+        "id": 36,
+        "question": "In the elliptic curve group defined by $y^2 = x^3 - 17x + 16$ over real numbers, what is $P + Q$ if $P = (0, -4)$ and $Q = (1, 0)$?",
+        "choice": [
+            "(15, -56)",
+            "(-23, -43)",
+            "(69, 26)",
+            "(12, -86)",
+            "None of the above"
+        ],
+        "answer": [
+            0
+        ],
+        "label": "asymmetric"
+    },
+    {
+        "id": 37,
+        "question": "The security of the RSA encryption scheme primarily corresponds to which of the following computationally hard problems?",
+        "choice": [
+            "The discrete logarithm problem",
+            "The problem of factoring large composite integers",
+            "Elliptic curve point addition and multiplication",
+            "A hybrid of factoring and discrete logarithm problems"
+        ],
+        "answer": [
+            1
+        ],
+        "label": "asymmetric"
+    },
+    {
+        "id": 38,
+        "question": "In the context of cryptographic algorithms, what best describes the avalanche effect?",
+        "choice": [
+            "A minor change in the plaintext causes a significant change in the ciphertext",
+            "Changing both the key and the plaintext simultaneously leads to encryption failure",
+            "Changing the key slightly will force a completely different plaintext",
+            "A slight change in the ciphertext affects the decryption key",
+            "None of the above"
+        ],
+        "answer": [
+            0
+        ],
+        "label": "misc"
+    },
+    {
+        "id": 39,
+        "question": "Which of the following is a correct difference between CBC (Cipher Block Chaining) mode and Counter (CTR) mode encryption?",
+        "choice": [
+            "CBC mode requires padding for partial blocks, whereas CTR mode does not.",
+            "CTR mode is inherently sequential and cannot be parallelized, whereas CBC can.",
+            "CBC mode allows random access decryption, whereas CTR mode does not.",
+            "In CBC mode, encryption can be parallelized, whereas decryption cannot in CTR mode.",
+            "None of the above"
+        ],
+        "answer": [
+            0
+        ],
+        "label": "symmetric"
+    },
+    {
+        "id": 40,
+        "question": "Why is it important to use a random Initialization Vector (IV) in CBC mode encryption?",
+        "choice": [
+            "A random IV prevents leakage of message patterns across different encryptions.",
+            "A random IV ensures resistance against chosen plaintext attacks in block cipher ECB mode.",
+            "A random IV allows decryption without knowing the key.",
+            "A random IV ensures integrity protection of the ciphertext.",
+            "None of the above"
+        ],
+        "answer": [
+            0
+        ],
+        "label": "symmetric"
+    },
+    {
+        "id": 41,
+        "question": "When implementing CBC-MAC, which type of IV should be used and why?",
+        "choice": [
+            "A fixed IV, to guarantee deterministic and repeatable MAC outputs.",
+            "No IV is required for CBC-MAC.",
+            "A random IV, to ensure non-determinism in message authentication.",
+            "A unique IV per message, to prevent replay attacks.",
+            "None of the above"
+        ],
+        "answer": [
+            0
+        ],
+        "label": "symmetric"
+    },
+    {
+        "id": 42,
+        "question": "Given an RSA public key $(N,e)$ and the factorization $N = pq$, how can the secret key $d$ be computed?",
+        "choice": [
+            "$d = e^{-1} \\mod \\varphi(N)$, where $\\varphi(N) = (p - 1)(q - 1)$",
+            "$d = e^{-1} \\mod (N - 1)$",
+            "$d = ep \\mod (q - 1)$",
+            "$d = p^{-1} \\mod q$",
+            "None of the above"
+        ],
+        "answer": [
+            0
+        ],
+        "label": "asymmetric"
+    },
+    {
+        "id": 43,
+        "question": "Which of the following best defines a collision-resistant hash function?",
+        "choice": [
+            "It is hard to find any two distinct inputs $x \\neq x'$ such that $H(x) = H(x')$",
+            "Given $x$, it is hard to find $y$ such that $H(x) = H(y)$.",
+            "No collisions exist for any practical input set.",
+            "It is hard to invert the hash output.",
+            "None of the above"
+        ],
+        "answer": [
+            0
+        ],
+        "label": "symmetric"
+    },
+    {
+        "id": 44,
+        "question": "If a hash function $H$ is one-way, must it also be collision-resistant?",
+        "choice": [
+            "No, a function can be one-way yet still allow finding collisions efficiently.",
+            "Yes, one-wayness always implies collision resistance.",
+            "Yes, since inverting implies finding collisions.",
+            "It depends on whether the output length $n$ is large enough.",
+            "None of the above"
+        ],
+        "answer": [
+            0
+        ],
+        "label": "symmetric"
+    },
+    {
+        "id": 45,
+        "question": "Let p be a prime such that $p \\equiv 2 \\pmod{3}$, and let $\\alpha \\in \\mathbb{Z}_p^*$. Which of the following efficiently computes the cube root of $\\alpha\\pmod{p}$?",
+        "choice": [
+            "Compute $\\alpha^{\\frac{2p-1}{3}} \\pmod{p}$.",
+            "Compute $\\alpha^{\\frac{p+1}{3}} \\pmod{p}$.",
+            "Compute $\\alpha^{\\frac{p-1}{2}} \\pmod{p}$.",
+            "Cube roots modulo such primes cannot be efficiently computed.",
+            "None of the above"
+        ],
+        "answer": [
+            0
+        ],
+        "label": "math"
+    },
+    {
+        "id": 46,
+        "question": "What is the performance advantage of using a modulus $N' = p'q'r'$ (product of three equal-sized primes) over $N = pq$ in RSA ($\\lfloor\\log_2(N)\\rceil = \\lfloor\\log_2(N')\\rceil$), when employing the Chinese Remainder Theorem (CRT) for decryption?",
+        "choice": [
+            "CRT does not apply to $N'$.",
+            "Decryption is faster due to smaller moduli and exponents.",
+            "Decryption is slower due to more primes involved.",
+            "Encryption becomes faster, but decryption remains the same.",
+            "None of the above"
+        ],
+        "answer": [
+            1
+        ],
+        "label": "asymmetric"
+    },
+    {
+        "id": 47,
+        "question": "Sender $S$ digitally signs a message $m$ using its private key and sends it to receiver $R$. Considering possible cryptographic attacks, who among the following can potentially launch a birthday attack to alter $m$ while maintaining the same hash value?",
+        "choice": [
+            "Only S",
+            "Only a third-party attacker",
+            "S and a third-party attacker",
+            "Receiver R and a third-party attacker",
+            "None of the above"
+        ],
+        "answer": [
+            0
+        ],
+        "label": "misc"
+    },
+    {
+        "id": 48,
+        "question": "Using a columnar transposition cipher, the plaintext 'the tomato is a plant in the nightshade family' is encrypted using the keyword 'TOMATO'. What is the resulting ciphertext, grouped by columns?",
+        "choice": [
+            "\"TINESAX / EOAHTFX / HTLTHEY / MAILAIX / TAPNGDL / OSTNHMX\"",
+            "\"TINESAX / EOAHTEX / MAILAIX / HTLTHEY / TAPNGDL / OSTNHMX\"",
+            "\"TINESAX / EOAHTFX / HTLTHEY / MAILAIX / OSTNHMX / TAPNGDL\"",
+            "\"EOAHTFX / TINESAX / HTLTHEY / MAILAIX / TAPNGDL / OSTNHMX\"",
+            "\"TINESAX / EOAHTFX / HTLTHEY / MAIIAIX / TAPNGDL / OSTNHMX\""
+        ],
+        "answer": [
+            4
+        ],
+        "label": "classic"
+    },
+    {
+        "id": 49,
+        "question": "Which of the following security properties is not inherently guaranteed by a digital signature mechanism?",
+        "choice": [
+            "Authentication",
+            "Non-repudiation",
+            "Confidentiality",
+            "Integrity",
+            "None of the above"
+        ],
+        "answer": [
+            2
+        ],
+        "label": "asymmetric"
+    },
+    {
+        "id": 50,
+        "question": "In a public-key cryptographic scheme, if user A wants to send a secure message to user B, which key should A use to encrypt the message?",
+        "choice": [
+            "A's private key",
+            "B's private key",
+            "B's public key",
+            "A's public key",
+            "None of the above"
+        ],
+        "answer": [
+            2
+        ],
+        "label": "asymmetric"
+    },
+    {
+        "id": 51,
+        "question": "When comparing AES with DES, which operation in DES lacks a corresponding component in AES?",
+        "choice": [
+            "Function f",
+            "Permutation P",
+            "Swapping of left and right halves",
+            "XOR between subkey and function output",
+            "None of the above"
+        ],
+        "answer": [
+            2
+        ],
+        "label": "symmetric"
+    },
+    {
+        "id": 52,
+        "question": "In elliptic curve cryptography (ECC), the problem of \"given P, a point on the curve, and the scalar multiplication Q = kP (where k is an integer), find k\" primarily corresponds to which mathematical problem",
+        "choice": [
+            "Integer factorization problem",
+            "Discrete logarithm problem",
+            "Elliptic curve discrete logarithm problem",
+            "Subset sum problem"
+        ],
+        "answer": [
+            2
+        ],
+        "label": "asymmetric"
+    },
+    {
+        "id": 53,
+        "question": "Imagine you are designing a secure voting system where votes need to be encrypted to ensure privacy. Which encryption scheme is most suitable for tallying votes without decrypting them all (assuming only two candidates: A and B, with encrypted votes represented as 0 or 1)?",
+        "choice": [
+            "AES-GCM",
+            "RSA",
+            "Fully Homomorphic Encryption",
+            "ElGamal",
+            "None of the above"
+        ],
+        "answer": [
+            2
+        ],
+        "label": "misc"
+    },
+    {
+        "id": 54,
+        "question": "Suppose you have encrypted a message using RSA, where the public key is $(n, e)$ and the private key is $d$. If an attacker successfully factors the modulus n into two distinct prime numbers $p$ and $q$, what can the attacker now do?",
+        "choice": [
+            "Decrypt any message encrypted with the public key without calculating $d$.",
+            "Compute the private key $d$, and thus decrypt any message encrypted with the public key.",
+            "Forge messages signed with the private key but cannot decrypt ciphertext.",
+            "Perform no meaningful attack since the encryption process remains secure.",
+            "None of the above"
+        ],
+        "answer": [
+            1
+        ],
+        "label": "asymmetric"
+    },
+    {
+        "id": 55,
+        "question": "What is a primary vulnerability of the Electronic Code Book (ECB) mode of encryption?",
+        "choice": [
+            "It needs a larger block size to be secure",
+            "It uses excessive padding for all input sizes",
+            "It is susceptible to cryptanalysis due to the one-to-one mapping between plaintext and ciphertext blocks",
+            "None of the above"
+        ],
+        "answer": [
+            2
+        ],
+        "label": "symmetric"
+    },
+    {
+        "id": 56,
+        "question": "In a digital signature system, which key should the sender (e.g., Alice) use to sign a message so that the recipient (e.g., Bob) can verify the origin and authenticity of the message?",
+        "choice": [
+            "Bob's private key",
+            "Alice's private key",
+            "Bob's public key",
+            "Alice's username and password",
+            "None of the above"
+        ],
+        "answer": [
+            1
+        ],
+        "label": "asymmetric"
+    },
+    {
+        "id": 57,
+        "question": "Based on the information available to an attacker, cryptanalysis attacks can generally be classified into four types: ciphertext-only attacks, known-plaintext attacks, chosen-plaintext attacks, and chosen-ciphertext attacks. Which type of attack is considered the most difficult for the attacker to attack successfully?",
+        "choice": [
+            "Ciphertext-only attack",
+            "Known-plaintext attack",
+            "Chosen-plaintext attack",
+            "Chosen-ciphertext attack",
+            "None of the above"
+        ],
+        "answer": [
+            0
+        ],
+        "label": "misc"
+    },
+    {
+        "id": 58,
+        "question": "In the RSA blind signature scheme, how does the requester blind the original message before sending it to the signer?",
+        "choice": [
+            "Encrypting the message with a private key",
+            "Encrypting a random blinding factor with the public key of RSA, and multiplying it with the message",
+            "Encrypting the message with a public key",
+            "Reordering blocks of the message",
+            "None of the above"
+        ],
+        "answer": [
+            1
+        ],
+        "label": "asymmetric"
+    },
+    {
+        "id": 59,
+        "question": "Which transformation step in the AES encryption algorithm is primarily responsible for achieving diffusion?",
+        "choice": [
+            "ShiftRows",
+            "SubBytes",
+            "AddRoundKey",
+            "MixColumns",
+            "None of the above"
+        ],
+        "answer": [
+            3
+        ],
+        "label": "symmetric"
+    },
+    {
+        "id": 60,
+        "question": "Which of the following statements about confusion in cryptography is incorrect?",
+        "choice": [
+            "Confusion aims to make the ciphertext-key relationship more complex",
+            "S-boxes play a key role in achieving confusion",
+            "Confusion can be effectively achieved using a basic XOR operation",
+            "The purpose of confusion is to prevent attackers from deducing the key",
+            "None of the above"
+        ],
+        "answer": [
+            2
+        ],
+        "label": "symmetric"
+    },
+    {
+        "id": 61,
+        "question": "If a cryptographic algorithm employs confusion but lacks diffusion, which type of attack is it most vulnerable to?",
+        "choice": [
+            "Differential cryptanalysis",
+            "Linear cryptanalysis",
+            "Brute force attack",
+            "None of the above"
+        ],
+        "answer": [
+            0
+        ],
+        "label": "symmetric"
+    },
+    {
+        "id": 62,
+        "question": "What is the main objective of diffusion in the design of a secure encryption system?",
+        "choice": [
+            "Making small changes in the plaintext significantly affect the ciphertext",
+            "Reducing the number of encryption rounds",
+            "Enhancing the non-linearity between ciphertext and key",
+            "Improving encryption speed",
+            "None of the above"
+        ],
+        "answer": [
+            0
+        ],
+        "label": "symmetric"
+    },
+    {
+        "id": 63,
+        "question": "Let $(Gen, E, D)$ be a chosen ciphertext secure public-key encryption system with message space $\\{0,1\\}^{128}$. Which of the following is also chosen ciphertext secure?",
+        "choice": [
+            "$(Gen, E', D')$ where $E'(pk, m) = (E(pk, m), E(pk, 0^{128}))$ and $D'(sk, (c_1, c_2)) = D(sk, c_1)$.",
+            "$(Gen, E', D')$ where $E'(pk, m) = (E(pk, m), E(pk, m))$ and \\\\\n$D'(sk, (c_1, c_2)) = \\begin{cases} D(sk, c_1) & \\text{if } D(sk, c_1) = D(sk, c_2) \\\\ \\perp & \\text{otherwise} \\end{cases}$.",
+            "$(Gen, E', D')$ where $E'(pk, m) = E(pk, m \\oplus 1^{128})$ and $D'(sk, c) = D(sk, c) \\oplus 1^{128}$.",
+            "None of the above"
+        ],
+        "answer": [
+            2
+        ],
+        "label": "asymmetric"
+    },
+    {
+        "id": 64,
+        "question": "The letter frequency analysis method is most effective against which type of classical cipher algorithm?",
+        "choice": [
+            "Transposition cipher",
+            "Monoalphabetic substitution cipher",
+            "Polyalphabetic substitution cipher",
+            "Stream cipher",
+            "None of the above"
+        ],
+        "answer": [
+            1
+        ],
+        "label": "classic"
+    },
+    {
+        "id": 65,
+        "question": "Which of the following cipher algorithms offers the strongest resistance to frequency analysis but the weakest resistance to known-plaintext attacks?",
+        "choice": [
+            "Affine cipher",
+            "Vigen\u00e8re cipher",
+            "Rotational cipher",
+            "Hill cipher",
+            "None of the above"
+        ],
+        "answer": [
+            3
+        ],
+        "label": "classic"
+    },
+    {
+        "id": 66,
+        "question": "The index of coincidence method is particularly effective for breaking which type of cipher?",
+        "choice": [
+            "Transposition cipher",
+            "Polyalphabetic substitution cipher",
+            "Stream cipher",
+            "None of the above"
+        ],
+        "answer": [
+            1
+        ],
+        "label": "classic"
+    },
+    {
+        "id": 67,
+        "question": "The Vigen\u00e8re cipher, a representative example of classical cipher systems, employs which type of encryption approach?",
+        "choice": [
+            "Transposition cipher",
+            "Monoalphabetic substitution cipher",
+            "Polyalphabetic substitution cipher",
+            "Stream cipher",
+            "None of the above"
+        ],
+        "answer": [
+            2
+        ],
+        "label": "classic"
+    },
+    {
+        "id": 68,
+        "question": "In the DES algorithm, if all the subkeys generated from a given initial key k are identical, such a key is called a weak key. How many weak keys exist in DES?",
+        "choice": [
+            "2",
+            "4",
+            "8",
+            "16",
+            "None of the above"
+        ],
+        "answer": [
+            1
+        ],
+        "label": "symmetric"
+    },
+    {
+        "id": 69,
+        "question": "The Index Calculus method is used to analyze which type of cryptographic algorithm?",
+        "choice": [
+            "Knapsack cryptosystem",
+            "RSA",
+            "ElGamal",
+            "ECC",
+            "None of the above"
+        ],
+        "answer": [
+            2
+        ],
+        "label": "asymmetric"
+    },
+    {
+        "id": 70,
+        "question": "Suppose an affine cipher uses the encryption rule \\( c \\equiv 17m + 2 \\pmod{26} \\). Which of the following represents the correct decryption function?",
+        "choice": [
+            "\\( m \\equiv 3c + 6 \\pmod{26} \\)",
+            "\\( m \\equiv 3c - 2 \\pmod{26} \\)",
+            "\\( m \\equiv 23c + 6 \\pmod{26} \\)",
+            "\\( m \\equiv 23c - 2 \\pmod{26} \\)",
+            "None of the above"
+        ],
+        "answer": [
+            2
+        ],
+        "label": "symmetric"
+    },
+    {
+        "id": 71,
+        "question": "Consider a maximum-length sequence (m-sequence) generated by an n-stage linear feedback shift register (LFSR). In one full period of this sequence, how many runs of consecutive 1s with length exactly n-1 occur?",
+        "choice": [
+            "0",
+            "1",
+            "2",
+            "n",
+            "None of the above"
+        ],
+        "answer": [
+            2
+        ],
+        "label": "symmetric"
+    },
+    {
+        "id": 72,
+        "question": "The (t, n)-threshold scheme proposed by Shamir is based on which of the following?",
+        "choice": [
+            "Lagrange interpolation polynomial",
+            "Discrete logarithm problem",
+            "Knapsack problem",
+            "Large integer factorization problem",
+            "None of the above"
+        ],
+        "answer": [
+            0
+        ],
+        "label": "misc"
+    },
+    {
+        "id": 73,
+        "question": "Which of the following statements about digital signatures is correct?",
+        "choice": [
+            "A digital signature appends a piece of irrelevant digital information to the transmitted data",
+            "A digital signature solves the problem of secure data transmission by encryption",
+            "A digital signature typically uses symmetric encryption mechanisms",
+            "A digital signature can solve security issues such as tampering and forgery",
+            "None of the above"
+        ],
+        "answer": [
+            3
+        ],
+        "label": "asymmetric"
+    },
+    {
+        "id": 74,
+        "question": "What additional property transforms a commutative ring into a mathematical field?",
+        "choice": [
+            "Existence of reciprocals for all non-null elements",
+            "Presence of opposites for all elements",
+            "Availability of reciprocals for all elements",
+            "Partial availability of reciprocals",
+            "None of the above"
+        ],
+        "answer": [
+            0
+        ],
+        "label": "math"
+    },
+    {
+        "id": 75,
+        "question": "In the AES algorithm, which component introduces non-linearity?",
+        "choice": [
+            "Byte substitution",
+            "Row shifting",
+            "Column mixing",
+            "Round key addition",
+            "None of the above"
+        ],
+        "answer": [
+            0
+        ],
+        "label": "symmetric"
+    },
+    {
+        "id": 76,
+        "question": "For the affine cipher $y \\equiv (a\\cdot x + b) \\mod 26$, what constraint applies to the coefficient 'a'?",
+        "choice": [
+            "Any integer value is acceptable",
+            "Must be divisible by 2",
+            "Must be relatively prime to 26",
+            "Must be divisible by 13",
+            "None of the above"
+        ],
+        "answer": [
+            2
+        ],
+        "label": "symmetric"
+    },
+    {
+        "id": 77,
+        "question": "What correctly describes key management in public-key systems?",
+        "choice": [
+            "All cryptographic keys are public",
+            "Encryption keys are public while decryption keys are private",
+            "Private keys are exchanged between parties",
+            "Both encryption and decryption keys remain secret",
+            "None of the above"
+        ],
+        "answer": [
+            1
+        ],
+        "label": "asymmetric"
+    },
+    {
+        "id": 78,
+        "question": "Given two distinct primes \\( p \\) and \\( q \\), let \\( n = p \\cdot q \\). What is the value of Euler's totient function \\( \\varphi(n) \\)?",
+        "choice": [
+            "\\( p + q - 1 \\)",
+            "\\( p \\cdot q \\)",
+            "\\( (p - 1)(q - 1) \\)",
+            "\\( (p + 1)(q + 1) \\)",
+            "None of the above"
+        ],
+        "answer": [
+            2
+        ],
+        "label": "math"
+    },
+    {
+        "id": 79,
+        "question": "What algebraic structure do residue classes modulo a prime p form?",
+        "choice": [
+            "A non-field ring",
+            "An additive group only",
+            "A finite field",
+            "An infinite field",
+            "None of the above"
+        ],
+        "answer": [
+            2
+        ],
+        "label": "math"
+    },
+    {
+        "id": 80,
+        "question": "In public key cryptography, what is the correct sequence for signing-then-encrypting a message?",
+        "choice": [
+            "Sign with X's private key \u2192 Encrypt with Y's public key",
+            "Sign with Y's public key \u2192 Encrypt with X's private key",
+            "Encrypt with X's public key \u2192 Sign with Y's private key",
+            "Encrypt with Y's private key \u2192 Sign with X's public key",
+            "None of the above"
+        ],
+        "answer": [
+            0
+        ],
+        "label": "asymmetric"
+    },
+    {
+        "id": 81,
+        "question": "The Euclidean Algorithm produces a sequence $X_1 > X_2 > \\ldots > X_k = 0$ of positive integers where each $X_t$ for $2 < t \\leq k$ is the remainder obtained by dividing $X_{t-2}$ by $X_{t-1}$. If $X_{k-1} = 45$, then the set of all positive common divisors of $X_1$ and $X_2$ is",
+        "choice": [
+            "{1, 3, 5, 9, 15, 45}",
+            "{1, 3, 5, 15}",
+            "{1, 3, 5}",
+            "{1, 9, 15, 45}",
+            "{1, 3, 5, 9, 15}",
+            "None of the above"
+        ],
+        "answer": [
+            0
+        ],
+        "label": "math"
+    },
+    {
+        "id": 82,
+        "question": "Let $L$ be the least common multiple of 175 and 105. Among all common divisors $x > 1$ of 175 and 105, let $D$ be the smallest. Which of the following is correct?",
+        "choice": [
+            "$D = 5$ and $L = 1050$",
+            "$D = 7$ and $L = 1050$",
+            "$D = 5$ and $L = 525$",
+            "$D = 7$ and $L = 525$",
+            "$D = 5$ and $L = 35$",
+            "None of the above"
+        ],
+        "answer": [
+            2
+        ],
+        "label": "math"
+    },
+    {
+        "id": 83,
+        "question": "The Euclidean Algorithm is used to produce a sequence \\( X_1 > X_2 > X_3 > X_4 > X_5 = 0 \\) of positive integers where \\( X_t = q_{t+1}X_{t+1} + X_{t+2} \\), for \\( t = 1, 2, 3 \\). The quotients are \\( q_2 = 3 \\), \\( q_3 = 2 \\), and \\( q_4 = 2 \\). Which of the following is correct?",
+        "choice": [
+            "gcd(\\( X_1, X_2 \\)) = \\( -2X_1 + 6X_2 \\)",
+            "gcd(\\( X_1, X_2 \\)) = \\( -2X_1 - 6X_2 \\)",
+            "gcd(\\( X_1, X_2 \\)) = \\( -2X_1 - 7X_2 \\)",
+            "gcd(\\( X_1, X_2 \\)) = \\( 2X_1 + 7X_2 \\)",
+            "gcd(\\( X_1, X_2 \\)) = \\( -2X_1 + 7X_2 \\)",
+            "None of the above"
+        ],
+        "answer": [
+            4
+        ],
+        "label": "math"
+    },
+    {
+        "id": 84,
+        "question": "Which cipher mode should always be used when available to ensure both confidentiality and integrity?",
+        "choice": [
+            "ECB",
+            "CBC",
+            "GCM or CCM",
+            "CTR",
+            "None of the above"
+        ],
+        "answer": [
+            2
+        ],
+        "label": "symmetric"
+    },
+    {
+        "id": 85,
+        "question": "In RSA encryption, what must be enabled to protect against Known Plaintext Attacks?",
+        "choice": [
+            "Random Padding (OAEP)",
+            "Initialization Vector (IV)",
+            "Key Derivation Function (KDF)",
+            "None of the above"
+        ],
+        "answer": [
+            0
+        ],
+        "label": "asymmetric"
+    },
+    {
+        "id": 86,
+        "question": "How many distinct solutions exist for the congruence equation \\( x^2 \\equiv 1 \\mod 30 \\)?",
+        "choice": [
+            "1",
+            "2",
+            "4",
+            "8",
+            "None of the above"
+        ],
+        "answer": [
+            2
+        ],
+        "label": "math"
+    },
+    {
+        "id": 87,
+        "question": "Which of the following quotient rings does NOT define a field isomorphic to \\( \\text{GF}(2^5) \\)?",
+        "choice": [
+            "$GF(2)[x] / \\langle x^5 + x^4 + x^3 + x + 1 \\rangle$",
+            "$ GF(2)[x] / \\langle x^5 + x^3 + 1 \\rangle$",
+            "$GF(2)[x] / \\langle x^5 + x^4 + x^3 + x^2 + 1 \\rangle$",
+            "$GF(2)[x] / \\langle x^5 + x^4 + 1 \\rangle$",
+            "None of the above"
+        ],
+        "answer": [
+            3
+        ],
+        "label": "math"
+    },
+    {
+        "id": 88,
+        "question": "Which of the following irreducible polynomials over \\( \\text{GF}(3) \\) is also primitive?",
+        "choice": [
+            "\\( x^3 + 2x + 1 \\)",
+            "\\( x^3 + 2x + 2 \\)",
+            "\\( x^3 + x^2 + 2 \\)",
+            "\\( x^3 + x^2 + x + 2 \\)",
+            "None of the above"
+        ],
+        "answer": [
+            0
+        ],
+        "label": "math"
+    },
+    {
+        "id": 89,
+        "question": "In a Feistel network cipher, each round consists of \\( L_i = R_{i-1} \\), and which of the following describes \\( R_i \\)?",
+        "choice": [
+            "\\( R_i = L_{i-1} \\oplus f(L_{i-1}, k_i) \\)",
+            "\\( R_i = L_{i-1} \\oplus f(R_{i-1}, k_i) \\)",
+            "\\( R_i = R_{i-1} \\oplus f(R_{i-1}, k_i) \\)",
+            "\\( R_i = R_{i-1} \\oplus f(L_{i-1}, k_i) \\)",
+            "None of the above"
+        ],
+        "answer": [
+            1
+        ],
+        "label": "symmetric"
+    },
+    {
+        "id": 90,
+        "question": "The block cipher IDEA uses a combination of algebraic operations from three distinct groups. Which of the following is \\textbf{NOT} one of them?",
+        "choice": [
+            "\\( (\\{0,1\\}^{16}, \\oplus) \\)",
+            "\\( \\mathbb{Z}_{65536}, + \\mod 65536 \\)",
+            "\\( S_{16}, \\circ \\text{ (composition)} \\)",
+            "\\( \\mathbb{Z}_{65537}^*, \\times \\mod 65537 \\)",
+            "None of the above"
+        ],
+        "answer": [
+            2
+        ],
+        "label": "symmetric"
+    },
+    {
+        "id": 91,
+        "question": "Let \\( m_i \\) and \\( c_i \\) denote plaintext and ciphertext blocks in CBC mode. For \\( i > 1 \\), what is the correct decryption operation?",
+        "choice": [
+            "\\( m_i = d_k(c_i) \\oplus m_{i-1} \\)",
+            "\\( m_i = d_k(c_i \\oplus m_{i-1}) \\)",
+            "\\( m_i = d_k(c_i) \\oplus c_{i-1} \\)",
+            "\\( m_i = d_k(c_i \\oplus c_{i-1}) \\)",
+            "None of the above"
+        ],
+        "answer": [
+            2
+        ],
+        "label": "symmetric"
+    },
+    {
+        "id": 92,
+        "question": "The block cipher SAFER uses an 8-bit substitution defined as \\( S(x) = 45^x \\mod 257 \\), with 256 represented by 0. Which function below is NOT a bijective mapping on 8-bit values?",
+        "choice": [
+            "\\( S(x) = 45^{5x} \\mod 257 \\)",
+            "\\( S(x) = 45^{6x} \\mod 257 \\)",
+            "\\( S(x) = 45^{9x} \\mod 257 \\)",
+            "\\( S(x) = 45^{15x} \\mod 257 \\)",
+            "None of the above"
+        ],
+        "answer": [
+            1
+        ],
+        "label": "symmetric"
+    },
+    {
+        "id": 93,
+        "question": "In a hybrid cryptosystem, what is the role of the symmetric key?",
+        "choice": [
+            "It is used to encrypt the public key",
+            "It is used to encrypt the session data after it is established",
+            "It is used to encrypt the private key",
+            "It is used for the authentication of the message sender",
+            "None of the above"
+        ],
+        "answer": [
+            1
+        ],
+        "label": "misc"
+    },
+    {
+        "id": 94,
+        "question": "For which prime numbers $p$ and $q$ can a cyclic multiplicative subgroup of order $q$ be constructed within $(\\mathbb{Z}_p^*, \\times)$? Cryptographic schemes based on the discrete logarithm problem typically operate on such groups.",
+        "choice": [
+            "$p = 859$, $q = 103$",
+            "$p = 853$, $q = 101$",
+            "$p = 857$, $q = 107$",
+            "$p = 863$, $q = 109$",
+            "None of the above"
+        ],
+        "answer": [
+            2
+        ],
+        "label": "asymmetric"
+    },
+    {
+        "id": 95,
+        "question": "Consider a key management scheme devised by an administrator. The administrator generates an RSA modulus $N$ and a master secret $s \\in \\mathbb{Z}_N^*$. For each user $i$, a secret key $s_i = s^{r_i} \\pmod{N}$ is assigned, where $r_i$ is the $i$-th prime number (e.g., $r_1=2, r_2=3, \\ldots$). \n \nTo encrypt a file intended for a group of users, say users $i, j,$ and $t$, the administrator uses the key $k = s^{r_i r_j r_t} \\pmod{N}$. Each authorized user can compute $k$. For instance, user $i$ computes $k = (s_i)^{r_j r_t} = (s^{r_i})^{r_j r_t} = s^{r_i r_j r_t} \\pmod{N}$. The scheme aims to ensure that only the designated users can compute $k$ and access the file. \n \nHowever, this system is insecure. Any two colluding users can combine their secret keys to recover the master secret $s$. Consider users 1 and 2, with secret keys $s_1 = s^{r_1} \\pmod{N}$ and $s_2 = s^{r_2} \\pmod{N}$ respectively. Since $r_1$ and $r_2$ are distinct primes, by the Extended Euclidean Algorithm (Bezout's identity), there exist integers $a$ and $b$ such that $a \\cdot r_1 + b \\cdot r_2 = 1$. \n \nHow can users 1 and 2 compute the master secret $s$ using their keys $s_1, s_2$ and the integers $a, b$? {}",
+        "choice": [
+            "$s = s_1^b \\cdot s_2^a \\pmod{N}$",
+            "$s = s_1^a + s_2^b \\pmod{N}$",
+            "$s = s_1^b + s_2^a \\pmod{N}$",
+            "$s = s_1^a \\cdot s_2^b \\pmod{N}$",
+            "None of the above"
+        ],
+        "answer": [
+            3
+        ],
+        "label": "asymmetric"
+    },
+    {
+        "id": 96,
+        "question": "Which of the following is \\textbf{not} a property provided by Message Authentication Codes (MACs)?",
+        "choice": [
+            "Integrity \u2014 detecting any modification of a message during transmission",
+            "Authentication \u2014 verifying the message origin for the receiver",
+            "Non-repudiation \u2014 preventing the sender from denying message origin",
+            "Fixed output length \u2014 generating authentication tags of a consistent size",
+            "None of the above"
+        ],
+        "answer": [
+            2
+        ],
+        "label": "misc"
+    },
+    {
+        "id": 97,
+        "question": "Which of the following statements about the Digital Signature Algorithm (DSA) is \\textbf{false}?",
+        "choice": [
+            "Proposed by NIST as a US federal digital signature standard",
+            "Signature verification is faster than RSA at equivalent security levels",
+            "Based on the ElGamal signature scheme",
+            "Vulnerable if the same ephemeral key is reused across signatures",
+            "None of the above"
+        ],
+        "answer": [
+            1
+        ],
+        "label": "asymmetric"
+    },
+    {
+        "id": 98,
+        "question": "Which of the following statements about key establishment using a Key Distribution Center (KDC) is \\textbf{false}?",
+        "choice": [
+            "Each user shares a Key Encryption Key (KEK) with both the KDC and every other user",
+            "Only $n$ long-term keys are needed in a network with $n$ users",
+            "When a new user joins, only one secure key is required between the user and the KDC",
+            "The KDC distributes session keys encrypted under users' KEKs",
+            "None of the above"
+        ],
+        "answer": [
+            0
+        ],
+        "label": "misc"
+    },
+    {
+        "id": 99,
+        "question": "Which of the following quotient rings is isomorphic to the finite field $\\mathbb{GF}(81)$?",
+        "choice": [
+            "$\\mathbb{GF}_3[x] / \\langle x^4 + x + 2 \\rangle$",
+            "$\\mathbb{GF}_3[x] / \\langle x^4 + 2x + 1 \\rangle$",
+            "$\\mathbb{GF}_3[x] / \\langle x^4 + 1 \\rangle$",
+            "$\\mathbb{GF}_3[x] / \\langle x^4 + 2 \\rangle$",
+            "None of the above"
+        ],
+        "answer": [
+            0
+        ],
+        "label": "math"
+    },
+    {
+        "id": 100,
+        "question": "A cryptographic system needs to compute polynomial operations over a quotient ring $\\mathbb{Z}_{17}[x]/\\phi(x)$. Without regard to security, which is the best choice of $\\phi(x)$ for efficiency?",
+        "choice": [
+            "$\\phi(x) = x^8+1$",
+            "$\\phi(x) = x^8+2$",
+            "$\\phi(x) = x^8+3$",
+            "$\\phi(x) = x^8+4$"
+        ],
+        "answer": [
+            0
+        ],
+        "label": "math"
+    },
+    {
+        "id": 101,
+        "question": "Let $n = pq$ be an RSA modulus, where $p$ and $q$ are large primes. Let $e$ and $d$ be the public and private exponents such that $ed \\equiv 1 \\pmod{k}$. Originally, $k = \\phi(n)$. Which alternative choice of $k$ still guarantees correct decryption while potentially allowing for a smaller $d$?",
+        "choice": [
+            "$\\mathrm{lcm}(p - 1, q - 1)$",
+            "$\\gcd(p - 1, q - 1)$",
+            "$\\mathrm{lcm}(p + 1, q + 1)$",
+            "$\\gcd(p + 1, q + 1)$",
+            "None of the above"
+        ],
+        "answer": [
+            0
+        ],
+        "label": "asymmetric"
+    },
+    {
+        "id": 102,
+        "question": "Which of the following statements about the Key Encryption Key (KEK) is \\textbf{FALSE}?",
+        "choice": [
+            "KDC (Key Distribution Center) shares a unique KEK with each user individually.",
+            "KDC sends session keys encrypted under KEKs to the users.",
+            "If KEKs are compromised, an attacker still cannot decrypt previously transmitted messages.",
+            "Adding a new user only affects the KEK related to that user without impacting others.",
+            "None of the above"
+        ],
+        "answer": [
+            2
+        ],
+        "label": "misc"
+    },
+    {
+        "id": 103,
+        "question": "For arbitrary inputs $A$ and $B$, which relation does the diffusion operation $D$ in the AES diffusion layer always satisfy?",
+        "choice": [
+            "$D(A \\oplus B) \\neq A \\oplus B$",
+            "$D(A \\oplus B) = A \\oplus B$",
+            "$D(A \\oplus B) = D(A) \\oplus D(B)$",
+            "$D(A \\oplus B) \\neq D(A) \\oplus D(B)$",
+            "None of the above"
+        ],
+        "answer": [
+            2
+        ],
+        "label": "symmetric"
+    },
+    {
+        "id": 104,
+        "question": "Which attack reduces the effective key length of 3-key Triple DES from 168 bits to approximately 112 bits?",
+        "choice": [
+            "Meet-in-the-Middle attack",
+            "Man-in-the-Middle attack",
+            "Differential attack",
+            "Linear attack",
+            "None of the above"
+        ],
+        "answer": [
+            0
+        ],
+        "label": "symmetric"
+    },
+    {
+        "id": 105,
+        "question": "Given an elliptic curve over a prime field $\\mathbb{F}_p$, let the number of points on the curve be denoted as $\\#E$. Suppose the binary expansions of $p$ and $|p - \\#E|$ have $m$ and $n$ bits respectively. Which is the best approximation of the relation between $m$ and $n$?",
+        "choice": [
+            "$m = 4n$",
+            "$m = 2n$",
+            "$2m = n$",
+            "$4m = n$",
+            "None of the above"
+        ],
+        "answer": [
+            1
+        ],
+        "label": "asymmetric"
+    },
+    {
+        "id": 106,
+        "question": "For an RSA implementation, suppose signing using the Chinese Remainder Theorem (CRT) takes time $s$, while signing without CRT takes time $t$. What best approximates the relation between $s$ and $t$? (Consider the complexity of modular multiplication over $\\mathbb{Z}_p$ is $\\log(p)^2$.)",
+        "choice": [
+            "$s = 4t$",
+            "$s = 2t$",
+            "$2s = t$",
+            "$4s = t$",
+            "None of the above"
+        ],
+        "answer": [
+            3
+        ],
+        "label": "asymmetric"
+    },
+    {
+        "id": 107,
+        "question": "Which of the following systems of congruences does \\textbf{NOT} have a solution?",
+        "choice": [
+            "$x \\equiv 1 \\pmod{7}, \\quad x \\equiv 3 \\pmod{9}, \\quad x \\equiv 5 \\pmod{11}$",
+            "$x \\equiv 1 \\pmod{8}, \\quad x \\equiv 3 \\pmod{9}, \\quad x \\equiv 5 \\pmod{11}$",
+            "$x \\equiv 1 \\pmod{7}, \\quad x \\equiv 3 \\pmod{9}, \\quad x \\equiv 5 \\pmod{12}$",
+            "$x \\equiv 1 \\pmod{7}, \\quad x \\equiv 3 \\pmod{10}, \\quad x \\equiv 5 \\pmod{12}$",
+            "None of the above"
+        ],
+        "answer": [
+            2
+        ],
+        "label": "math"
+    },
+    {
+        "id": 108,
+        "question": "Which of the following statements about the Man-in-the-Middle (MITM) attack is \\textbf{FALSE}?",
+        "choice": [
+            "An attacker can replace the public key of one party with their own key.",
+            "MITM attacks are applicable to Diffie-Hellman Key Exchange (DHKE) but not to RSA encryption.",
+            "MITM attacks are possible only if the public keys are not authenticated.",
+            "Public Key Infrastructure (PKI) is a solution to prevent MITM attacks.",
+            "None of the above"
+        ],
+        "answer": [
+            1
+        ],
+        "label": "misc"
+    },
+    {
+        "id": 109,
+        "question": "How many generators exist in the cyclic multiplicative group \\( \\mathbb{Z}_{243}^* \\)?",
+        "choice": [
+            "81",
+            "110",
+            "121",
+            "162",
+            "None of the above"
+        ],
+        "answer": [
+            1
+        ],
+        "label": "misc"
+    },
+    {
+        "id": 110,
+        "question": "Alice and Bob are in a country with 50 states. Alice is in state $a \\in \\{1, \\ldots, 50\\}$ and Bob is in state $b \\in \\{1, \\ldots, 50\\}$. Alice wants to determine if she is in the same state as Bob (i.e., if $a=b$) without revealing her state $a$ to Bob if $a \\neq b$. Bob should not learn Alice's state $a$ regardless. They agree on the following cryptographic protocol\\begin{enumerate} \n\\item They fix a public cyclic group $G$ of prime order $p$ with a generator $g \\in G$. \n\\item Alice chooses random exponents $x, y \\in \\mathbb{Z}_p$. She computes and sends to Bob the triplet$$ (A_0, A_1, A_2) = (g^x, g^y, g^{xy+a}) $$ \n(Note: $(A_1, A_2)$ can be seen as an ElGamal encryption of $g^a$ under the ephemeral public key $A_0=g^x$, using $y$ as the ephemeral private key, since $A_2 = g^a \\cdot (g^x)^y$.) \n\\item Bob chooses random exponents $r, s \\in \\mathbb{Z}_p$. He computes and sends back to Alice the pair$$ (B_1, B_2) = (A_1^r \\cdot g^s, (A_2 \\cdot g^{-b})^r \\cdot A_0^s) $$ \n\\end{enumerate} \nAfter receiving $(B_1, B_2)$ from Bob, what check should Alice perform to test if $a=b$?",
+        "choice": [
+            "Alice tests if $B_1^x \\cdot B_2 = 1$.",
+            "Alice tests if $B_2 \\cdot B_1^x = 1$.",
+            "Alice tests if $B_1 / B_2^x = 1$.",
+            "Alice tests if $B_2 / B_1^x = 1$.",
+            "None of the above"
+        ],
+        "answer": [
+            3
+        ],
+        "label": "asymmetric"
+    },
+    {
+        "id": 111,
+        "question": "Which of the following represents the encryption process of the standard 3DES (Triple-DES) scheme with a 112-bit key?",
+        "choice": [
+            "$\\mathrm{DES}_{k_3}(\\mathrm{DES}_{k_2}(\\mathrm{DES}_{k_1}(\\cdot)))$, where $k_1 = k_3$",
+            "$\\mathrm{DES}_{k_3}\\bigl(\\mathrm{DES}_{k_2}^{-1}(\\mathrm{DES}_{k_1}(\\cdot))\\bigr)$, where $k_1 = k_3$",
+            "$\\mathrm{DES}_{k_3}\\bigl(\\mathrm{DES}_{k_2}^{-1}(\\mathrm{DES}_{k_1}(\\cdot))\\bigr)$, where $k_1 = k_2$",
+            "$\\mathrm{DES}_{k_3}(\\mathrm{DES}_{k_2}(\\mathrm{DES}_{k_1}(\\cdot)))$, where $k_1 = k_2$",
+            "None of the above"
+        ],
+        "answer": [
+            1
+        ],
+        "label": "symmetric"
+    },
+    {
+        "id": 112,
+        "question": "Let $M = C = K = \\{0, 1, 2, \\ldots, 255\\}$ and consider the following cipher defined over $(K, M, C)$: $E(k, m) = m + k \\pmod{256}$ and $D(k, c) = c - k \\pmod{256}$. Does this cipher have perfect secrecy (meaning that the ciphertext conveys no information about the content of the plaintext)?",
+        "choice": [
+            "No, only the One Time Pad has perfect secrecy.",
+            "Yes",
+            "No, there is a simple attack on this cipher.",
+            "None of the above"
+        ],
+        "answer": [
+            1
+        ],
+        "label": "misc"
+    },
+    {
+        "id": 113,
+        "question": "Let $N=pq$ be an RSA modulus (where $p$ and $q$ are large distinct primes) and let $e$ be an integer such that $\\gcd(e, \\phi(N))=1$. Consider a hash function $h$ that processes a message $M$ by first parsing it into two blocks, $M = m_1 \\| m_2$. These blocks, $m_1$ and $m_2$, are interpreted as integers. The hash function is then defined as$$h(M) = (m_1 \\cdot m_2)^e \\pmod N$$ \nIs this hash function $h$ collision-resistant?",
+        "choice": [
+            "Yes, it is collision resistant.",
+            "No, it is not collision resistant.",
+            "Collision resistance cannot be determined from the information given.",
+            "None of the above"
+        ],
+        "answer": [
+            1
+        ],
+        "label": "asymmetric"
+    },
+    {
+        "id": 114,
+        "question": "Given the ciphertext C = eiioqoyldc and the key K = security, what is the original plaintext if the Playfair cipher was used? Assume 'x' is the special character used for padding identical adjacent letters and to complete a final digraph if necessary. Treat 'i' and 'j' as the same character.",
+        "choice": [
+            "stalxlings",
+            "stallings",
+            "secrettext",
+            "stollings",
+            "None of the above"
+        ],
+        "answer": [
+            0
+        ],
+        "label": "classic"
+    },
+    {
+        "id": 115,
+        "question": "Alice encrypts a message using a stream cipher. If she accidentally reuses the same keystream to encrypt a second, different message, what is the MOST likely consequence for an attacker who intercepts both ciphertexts?",
+        "choice": [
+            "The attacker can immediately decrypt both messages.",
+            "The attacker can obtain the XOR of the two original plaintexts, potentially revealing information about both.",
+            "The security of only the first message is compromised.",
+            "The stream cipher automatically detects the reuse and becomes secure again for subsequent communications."
+        ],
+        "answer": [
+            1
+        ],
+        "label": "symmetric"
+    },
+    {
+        "id": 116,
+        "question": "For a $n\\times n$ Hill cipher over the English alphabet, which is the correct size of its key space?",
+        "choice": [
+            "$\\prod_{i=0}^{n-1}\\left((2^n-2^i)\\cdot(13^n-13^i)\\right)$",
+            "$\\prod_{i=0}^{n-1}(2^n-2^i) \\cdot \\prod_{i=0}^{n-1}(13^{n-1}-13^i)$",
+            "$\\prod_{i=0}^{n-1}(26^n-26^i)$",
+            "$\\prod_{i=0}^{n-1}26^i$",
+            "None of the above"
+        ],
+        "answer": [
+            0
+        ],
+        "label": "classic"
+    },
+    {
+        "id": 117,
+        "question": "For a LWE instance $(A, b)$, where $A \\leftarrow \\mathcal{U}(\\mathbb{Z}_q^{m\\times n})$ and $b \\equiv As + e \\mod q$, which of the following is the most vulnerable parameter setting for algebraic attack (find the correct $s$ from $(A, b)$ through solving equations)? Let $\\mathcal{U}(\\mathcal{S})$ be the uniform distribution over the set $\\mathcal{S}$, and $\\mathcal{D}_{\\sigma}$ be the discrete Gaussian distribution centered at $0$ with the standard deviation $\\sigma$.",
+        "choice": [
+            "$s \\leftarrow \\mathcal{D}_{0.5}, e \\leftarrow \\mathcal{U}(\\{0, 1\\}^{n})$",
+            "$s \\leftarrow \\mathcal{U}(\\{0, 1\\}^{n}), e \\leftarrow \\mathcal{U}(\\{0, 1\\}^{n})$",
+            "$s \\leftarrow \\mathcal{U}(\\{0, 1\\}^{n}), e \\leftarrow \\mathcal{D}_{0.5}$",
+            "$s \\leftarrow \\mathcal{D}_{0.5}, e \\leftarrow \\mathcal{D}_{0.5}$",
+            "None of the above"
+        ],
+        "answer": [
+            1
+        ],
+        "label": "asymmetric"
+    },
+    {
+        "id": 118,
+        "question": "The high strength of a synchronous stream cipher mainly depends on which of the following?",
+        "choice": [
+            "The design of the keystream generator",
+            "The key length",
+            "The plaintext length",
+            "The complexity of the key",
+            "None of the above"
+        ],
+        "answer": [
+            0,
+            1
+        ],
+        "label": "symmetric"
+    },
+    {
+        "id": 119,
+        "question": "Which of the following cryptosystems are vulnerable to quantum attacks up to date?",
+        "choice": [
+            "RSA",
+            "Rabin",
+            "AES-256",
+            "NTRU"
+        ],
+        "answer": [
+            0,
+            1
+        ],
+        "label": "misc"
+    },
+    {
+        "id": 120,
+        "question": "For a $\\lambda$-secure (the time complexity under classic mode is exponential to $\\lambda$) RSA instance $(N, p, q, e,d)$, where $gcd(e, \\phi(N)) = 1, \\, ed\\equiv 1 \\mod \\phi(N)$. Which of the following cases are vulnerable RSA instances?",
+        "choice": [
+            "small $d$ such that $N^{1/8} < d < N^{1/4}$",
+            "approximate $p, q$ such that $|p-q| < poly(\\lambda)$",
+            "small $e$ such that $N^{1/8} < e < N^{1/4}$",
+            "the leakage of a past key $(e', d')$ such that $e'\\neq e, e'd'\\equiv 1 \\mod \\phi(N)$"
+        ],
+        "answer": [
+            0,
+            1,
+            3
+        ],
+        "label": "asymmetric"
+    },
+    {
+        "id": 121,
+        "question": "Which encryption schemes utilize different keys for encryption and decryption?",
+        "choice": [
+            "Shift cipher",
+            "RSA",
+            "Advanced Encryption Standard",
+            "Data Encryption Standard",
+            "ElGamal scheme",
+            "Secure Hash Algorithm"
+        ],
+        "answer": [
+            1,
+            4
+        ],
+        "label": "misc"
+    },
+    {
+        "id": 122,
+        "question": "Factor the polynomial $x^4 + 1$ in GF(2)",
+        "choice": [
+            "Cannot be factored in GF(2)",
+            "Factors as $(x^2 + 1)^2$",
+            "Factors as $(x + 1)^4$",
+            "Already in simplest form"
+        ],
+        "answer": [
+            1,
+            2
+        ],
+        "label": "math"
+    },
+    {
+        "id": 123,
+        "question": "Which statements about block cipher modes are correct?",
+        "choice": [
+            "CBC XORs plaintext with previous ciphertext",
+            "CTR doesn't need IV",
+            "CBC's last block uses IV",
+            "CBC hides plaintext patterns"
+        ],
+        "answer": [
+            0,
+            3
+        ],
+        "label": "symmetric"
+    },
+    {
+        "id": 124,
+        "question": "What is true about public key message encryption?",
+        "choice": [
+            "Encrypt with recipient's public key",
+            "Encrypt with sender's public key",
+            "Decrypt with sender's public key",
+            "Decrypt with recipient's private key"
+        ],
+        "answer": [
+            0,
+            3
+        ],
+        "label": "asymmetric"
+    },
+    {
+        "id": 125,
+        "question": "Which of the following are essential characteristics of a secure cryptographic hash function?",
+        "choice": [
+            "Support for revoking keys",
+            "Resistance to hash collisions",
+            "Deterministic behavior for any given input",
+            "Unique one-to-one mapping between inputs and outputs",
+            "Computational difficulty in finding a preimage for a given hash"
+        ],
+        "answer": [
+            1,
+            2,
+            4
+        ],
+        "label": "symmetric"
+    },
+    {
+        "id": 126,
+        "question": "SuperMail wants to ensure that all outgoing emails are authenticated and tamper-proof. Alice wishes to send a message \\( M \\) to Bob. Let \\( K_B \\) be Bob's public key and \\( K_A^{-1} \\) be Alice's private signing key. Based on SuperMail's security goals, which methods are appropriate for ensuring authenticity and integrity?",
+        "choice": [
+            "Encrypt \\( M \\) using Bob's public key: \\( E_{K_B}(M) \\)",
+            "Transmit \\( M \\) along with a digital signature generated with Alice's private key: \\( M, \\text{Sign}_{K_A^{-1}}(M) \\)",
+            "Generate a symmetric key \\( k \\), send \\( E_{K_B}(k) \\), and send \\( M \\oplus \\text{RC4}(k) \\)",
+            "Generate a symmetric key \\( k \\), send \\( E_{K_B}(k) \\), and \\( \\text{AES-CBC-Encrypt}_k(M) \\)\n",
+            "Generate a symmetric key \\( k \\); send \\( M, \\text{MAC}_k(M), E_{K_B}(k), \\text{Sign}_{K_A^{-1}}(E_{K_B}(M) || E_{K_B}(k)) \\)"
+        ],
+        "answer": [
+            1,
+            4
+        ],
+        "label": "misc"
+    },
+    {
+        "id": 127,
+        "question": "Alice needs to securely send a private email \\( M \\) to Bob. Let \\( K_B \\) be Bob's public key and \\( K_A^{-1} \\) be Alice's private signing key. Which methods protect confidentiality while ensuring authenticity?",
+        "choice": [
+            "Send \\( E_{K_B}(M), \\text{Sign}_{K_A^{-1}}(K_B) \\)",
+            "Send \\( E_{K_B}(M), \\text{Sign}_{K_A^{-1}}(M) \\)",
+            "Send \\( E_{K_B}(M), \\text{Sign}_{K_A^{-1}}(E_{K_B}(M)) \\)",
+            "Generate a symmetric key \\( k \\); send \\( E_{K_B}(k), \\text{Sign}_{K_A^{-1}}(E_{K_B}(k)) \\), and then encrypt \\( M \\) with \\( k \\)\n",
+            "Generate two keys \\( k_1, k_2 \\); send \\( E_{K_B}(k_1||k_2), \\text{Sign}_{K_A^{-1}}(E_{K_B}(k_1||k_2)) \\), $E_{k_1}(M || \\text{MAC}_{k_2}(M))$"
+        ],
+        "answer": [
+            2,
+            4
+        ],
+        "label": "misc"
+    },
+    {
+        "id": 128,
+        "question": "In the RSA encryption scheme, after selecting two large numbers $p$ and $q$, which of the following must be true about their properties?",
+        "choice": [
+            "$p$ and $q$ must be prime numbers",
+            "$p$/$q$ must yield an integer quotient",
+            "$p$ and $q$ should divide $\\phi(n)$",
+            "$p$ and $q$ must be co-prime"
+        ],
+        "answer": [
+            0,
+            3
+        ],
+        "label": "asymmetric"
+    },
+    {
+        "id": 129,
+        "question": "Differential cryptanalysis is a method of analyzing which type of cipher algorithm?",
+        "choice": [
+            "DES",
+            "AES",
+            "RSA",
+            "Rabin"
+        ],
+        "answer": [
+            0,
+            1
+        ],
+        "label": "symmetric"
+    },
+    {
+        "id": 130,
+        "question": "Let $(E, D)$ be a (one-time) semantically secure cipher where the message and ciphertext space is $\\{0,1\\}^n$. Which of the following encryption schemes are (one-time) semantically secure? (Select all that apply)",
+        "choice": [
+            "Scheme 1: $E'(k, m) = E(0^n, m)$",
+            "Scheme 2: $E'((k,k'), m) = E(k,m) \\| E(k', m)$, where $k \\neq k'$",
+            "Scheme 3: $E'(k,m) = E(k,m) \\| \\text{LSB}(m)$",
+            "Scheme 4: $E'(k,m) = 0 \\| E(k,m)$",
+            "Scheme 5: $E'(k,m) = E(k,m) \\| k$",
+            "Scheme 6: $E'(k,m) = \\text{reverse}(E(k,m))$"
+        ],
+        "answer": [
+            1,
+            3,
+            5
+        ],
+        "label": "misc"
+    },
+    {
+        "id": 131,
+        "question": "Let $F: \\{0,1\\}^n \\times \\{0,1\\}^n \\to \\{0,1\\}^n$ be a secure PRF (i.e., a PRF where the key space, input space, and output space are all $\\{0,1\\}^n$) and say $n = 128$. Which of the following constructions are secure PRFs? (Select all that apply)",
+        "choice": [
+            "$F'(k, x) = \\begin{cases} F(k,x) & \\text{when } x \\neq 0^n \\\\ 0^n & \\text{otherwise} \\end{cases}$",
+            "$F'(k,x) = F(k,x)[0,\\ldots,n-2]$ (i.e., $F'(k,x)$ drops the last bit of $F(k,x)$)",
+            "$F'((k_1,k_2), x) = F(k_1,x) \\| F(k_2,x)$ (here $\\|$ denotes concatenation, and $k\\neq k'$)",
+            "$F'(k, x) = k \\oplus x$",
+            "$F'(k,x) = F(k, x) \\oplus F(k, x \\oplus 1^n)$",
+            "$F'(k,x) = F(k, x \\oplus 1^n)$"
+        ],
+        "answer": [
+            1,
+            2,
+            5
+        ],
+        "label": "symmetric"
+    },
+    {
+        "id": 132,
+        "question": "Let $(S, V)$ be a secure MAC defined over $(K, M, T)$ where $K =\\{0, 1\\}^{128}, M = \\{0,1\\}^n$, and $T = \\{0,1\\}^{128}$. Which of the following constructions are secure MACs? (Select all that apply. $k\\in K, m\\in M, \\, t \\in T$)",
+        "choice": [
+            "$S'(k,m) = S(k, m \\oplus m)$ and $V'(k,m,t) = V(k, m \\oplus m, t)$",
+            "$S'(k,m) = S(k,m)$ and $V'(k,m,t) = [V(k, m, t) \\text{ or } V(k, m \\oplus 1^n, t)]$",
+            "$S'(k,m) = S(k, m[0,\\ldots,n-2] \\| 0)$ and $V'(k,m,t) = V(k, m[0,\\ldots,n-2] \\| 0, t)$",
+            "\\begin{minipage}[t]{\\linewidth}\n$S'((k_1,k_2), m) = (S(k_1,m), S(k_2,m))$ and \\\\\n$V'((k_1,k_2),m,(t_1,t_2)) = [V(k_1,m,t_1) \\text{ and } V(k_2,m,t_2)]$\n\\end{minipage}",
+            "$S'(k,m) = S(k, m \\| m)$ and $V'(k,m,t) = V(k, m \\| m, t)$",
+            "$S'(k,m) = S(k, m \\oplus 1^n)$ and $V'(k,m,t) = V(k, m \\oplus 1^n, t)$"
+        ],
+        "answer": [
+            3,
+            5
+        ],
+        "label": "misc"
+    },
+    {
+        "id": 133,
+        "question": "Let $H: \\{0, 1\\}^* \\rightarrow \\{0, 1\\}^l$ be a collision resistant hash function, where $l > 32$. Which of the following constructions are collision resistant?",
+        "choice": [
+            "$H'(m) = H(|m|)$ (i.e., hash the length of $m$)",
+            "$H'(m) = H(0)$",
+            "$H'(m) = H(m) \\| H(0)$",
+            "$H'(m) = H(m)[0,\\ldots,31]$ (i.e., output the first 32 bits of the hash)",
+            "$H'(m) = H(H(m))$",
+            "$H'(m) = H(m \\| m)$",
+            "$H'(m) = H(m) \\oplus H(m \\oplus 1^{|m|})$ (where $m \\oplus 1^{|m|}$ is the complement of $m$)"
+        ],
+        "answer": [
+            2,
+            4,
+            5
+        ],
+        "label": "symmetric"
+    },
+    {
+        "id": 134,
+        "question": "Let $(E,D)$ be an encryption system with key space $K$, message space $\\{0,1\\}^n$ and ciphertext space $\\{0,1\\}^s$. Suppose $(E, D)$ provides authenticated encryption. Which of the following systems provides authenticated encryption?",
+        "choice": [
+            "$E'(k,m) = (E(k,m), H(m))$ and $D'(k,(c,h)) = \\begin{cases} D(k,c) & \\text{if } H(D(k,c)) = h \\\\ \\perp & \\text{otherwise} \\end{cases}$ \\\\\n(here $H$ is some collision-resistant hash function.)",
+            "\\begin{minipage}[t]{\\linewidth}\n$E'((k_1,k_2),m) = E(k_2, E(k_1,m))$ and \\\\\n$D'((k_1,k_2), c) = \\begin{cases} D(k_1,D(k_2,c)) & \\text{if } D(k_2,c) \\neq \\perp \\\\ \\perp & \\text{otherwise} \\end{cases}$\n\\end{minipage}",
+            "$E'(k,m) = (E(k,m), 0)$ and $D'(k,(c,b)) = D(k,c)$",
+            "$E'(k,m) = E(k, m \\oplus 1^n)$ and $D'(k,c) = \\begin{cases} D(k,c) \\oplus 1^n & \\text{if } D(k,c) \\neq \\perp \\\\ \\perp & \\text{otherwise} \\end{cases}$"
+        ],
+        "answer": [
+            1,
+            3
+        ],
+        "label": "misc"
+    }
+]
